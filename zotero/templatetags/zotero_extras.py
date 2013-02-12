@@ -7,7 +7,10 @@ register = Library()
 def zotero_tags(parser, token):
     """
     Returns the code to be translated by Zotero.
-    Usage: {% zotero_tags tagged_item output_method vocabulary %}
+    Usage:
+        {% zotero_tags tagged_item vocabulary output_method %}
+    Example:
+        {% zotero_tags 1 "dc" "meta" %}
     """
     args = token.split_contents()
     if len(args) < 1 and len(args) > 3:
@@ -15,22 +18,22 @@ def zotero_tags(parser, token):
     
     tagged_item = args[1]
     if args[2]:
-        output_method = args[2]
-    else:
-        output_method = u'meta'
-    if args[3]:
-        vocabulary = args[3]
+        vocabulary = args[2]
     else:
         vocabulary = u'dc'
+    if args[3]:
+        output_method = args[3]
+    else:
+        output_method = u'meta'
     
-    return ZoteroTagsNode(tagged_item, output_method, vocabulary)
+    return ZoteroTagsNode(tagged_item, vocabulary, output_method)
 
 
 class ZoteroTagsNode(Node):
-    def __init__(self, tagged_item, output_method, vocabulary):
+    def __init__(self, tagged_item, vocabulary, output_method):
         self.tagged_item = tagged_item
-        self.output_method = output_method
         self.vocabulary = vocabulary
+        self.output_method = output_method
     
     def render(self, context):
         if self.output_method == 'meta':
@@ -42,10 +45,10 @@ class ZoteroTagsNode(Node):
 
 
 def render_meta(tagged_item, vocabulary):
-    result = u''
+    result = u'<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">'
     
     tagged_item = TaggedItem.objects.get(pk=tagged_item)
-    field_value_list = tagged_item.fieldvalue_set.all()
+    field_value_list = tagged_item.fields_values.all()
     for field_value in field_value_list:
         field = field_value.field
         if field.namespaces[vocabulary]:
@@ -55,6 +58,6 @@ def render_meta(tagged_item, vocabulary):
         value = field_value.value
         
         tag = u'<meta property="%s" content="%s"/>' % (name, value)
-        result += u'%s%s\n' % (result, tag)
+        result = u'%s%s\n' % (result, tag)
     
     return result

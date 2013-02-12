@@ -1,119 +1,1488 @@
 [
   {
     "fields": {
-      "field_name": "title", 
+      "field_name": "url", 
       "multiple": false, 
-      "namespaces": "{\"dc\":\"dc:title\"}"
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 1
   }, 
   {
     "fields": {
-      "field_name": "publisher", 
+      "field_name": "rights", 
       "multiple": false, 
-      "namespaces": "{\"dc\":\"dc:publisher\"}"
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 2
   }, 
   {
     "fields": {
-      "field_name": "publicationTitle", 
+      "field_name": "series", 
       "multiple": false, 
-      "namespaces": "{\"dc\":\"dc:publicationTitle\"}"
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 3
   }, 
   {
     "fields": {
-      "field_name": "author", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"dc:creator\"}"
+      "field_name": "volume", 
+      "multiple": false, 
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 4
   }, 
   {
     "fields": {
-      "field_name": "seriesEditor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"dc:editor\"}"
+      "field_name": "issue", 
+      "multiple": false, 
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 5
   }, 
   {
     "fields": {
-      "field_name": "reviewedAuthor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"dc:reviewer\"}"
+      "field_name": "edition", 
+      "multiple": false, 
+      "namespaces": null
     }, 
     "model": "zotero.field", 
     "pk": 6
   }, 
   {
     "fields": {
-      "fields": [
-        1, 
-        2, 
-        4, 
-        5
-      ], 
+      "field_name": "place", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 7
+  }, 
+  {
+    "fields": {
+      "field_name": "publisher", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 8
+  }, 
+  {
+    "fields": {
+      "field_name": "pages", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 9
+  }, 
+  {
+    "fields": {
+      "field_name": "ISBN", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 10
+  }, 
+  {
+    "fields": {
+      "field_name": "publicationTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 11
+  }, 
+  {
+    "fields": {
+      "field_name": "ISSN", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 12
+  }, 
+  {
+    "fields": {
+      "field_name": "date", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 13
+  }, 
+  {
+    "fields": {
+      "field_name": "section", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 14
+  }, 
+  {
+    "fields": {
+      "field_name": "callNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 15
+  }, 
+  {
+    "fields": {
+      "field_name": "archiveLocation", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 16
+  }, 
+  {
+    "fields": {
+      "field_name": "distributor", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 17
+  }, 
+  {
+    "fields": {
+      "field_name": "extra", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 18
+  }, 
+  {
+    "fields": {
+      "field_name": "journalAbbreviation", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 19
+  }, 
+  {
+    "fields": {
+      "field_name": "DOI", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 20
+  }, 
+  {
+    "fields": {
+      "field_name": "accessDate", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 21
+  }, 
+  {
+    "fields": {
+      "field_name": "seriesTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 22
+  }, 
+  {
+    "fields": {
+      "field_name": "seriesText", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 23
+  }, 
+  {
+    "fields": {
+      "field_name": "seriesNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 24
+  }, 
+  {
+    "fields": {
+      "field_name": "institution", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 25
+  }, 
+  {
+    "fields": {
+      "field_name": "reportType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 26
+  }, 
+  {
+    "fields": {
+      "field_name": "code", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 27
+  }, 
+  {
+    "fields": {
+      "field_name": "session", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 28
+  }, 
+  {
+    "fields": {
+      "field_name": "legislativeBody", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 29
+  }, 
+  {
+    "fields": {
+      "field_name": "history", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 30
+  }, 
+  {
+    "fields": {
+      "field_name": "reporter", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 31
+  }, 
+  {
+    "fields": {
+      "field_name": "court", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 32
+  }, 
+  {
+    "fields": {
+      "field_name": "numberOfVolumes", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 33
+  }, 
+  {
+    "fields": {
+      "field_name": "committee", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 34
+  }, 
+  {
+    "fields": {
+      "field_name": "assignee", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 35
+  }, 
+  {
+    "fields": {
+      "field_name": "patentNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 36
+  }, 
+  {
+    "fields": {
+      "field_name": "priorityNumbers", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 37
+  }, 
+  {
+    "fields": {
+      "field_name": "issueDate", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 38
+  }, 
+  {
+    "fields": {
+      "field_name": "references", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 39
+  }, 
+  {
+    "fields": {
+      "field_name": "legalStatus", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 40
+  }, 
+  {
+    "fields": {
+      "field_name": "codeNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 41
+  }, 
+  {
+    "fields": {
+      "field_name": "artworkMedium", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 42
+  }, 
+  {
+    "fields": {
+      "field_name": "number", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 43
+  }, 
+  {
+    "fields": {
+      "field_name": "artworkSize", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 44
+  }, 
+  {
+    "fields": {
+      "field_name": "libraryCatalog", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 45
+  }, 
+  {
+    "fields": {
+      "field_name": "videoRecordingFormat", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 46
+  }, 
+  {
+    "fields": {
+      "field_name": "interviewMedium", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 47
+  }, 
+  {
+    "fields": {
+      "field_name": "letterType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 48
+  }, 
+  {
+    "fields": {
+      "field_name": "manuscriptType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 49
+  }, 
+  {
+    "fields": {
+      "field_name": "mapType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 50
+  }, 
+  {
+    "fields": {
+      "field_name": "scale", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 51
+  }, 
+  {
+    "fields": {
+      "field_name": "thesisType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 52
+  }, 
+  {
+    "fields": {
+      "field_name": "websiteType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 53
+  }, 
+  {
+    "fields": {
+      "field_name": "audioRecordingFormat", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 54
+  }, 
+  {
+    "fields": {
+      "field_name": "label", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 55
+  }, 
+  {
+    "fields": {
+      "field_name": "presentationType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 56
+  }, 
+  {
+    "fields": {
+      "field_name": "meetingName", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 57
+  }, 
+  {
+    "fields": {
+      "field_name": "studio", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 58
+  }, 
+  {
+    "fields": {
+      "field_name": "runningTime", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 59
+  }, 
+  {
+    "fields": {
+      "field_name": "network", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 60
+  }, 
+  {
+    "fields": {
+      "field_name": "postType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 61
+  }, 
+  {
+    "fields": {
+      "field_name": "audioFileType", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 62
+  }, 
+  {
+    "fields": {
+      "field_name": "version", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 63
+  }, 
+  {
+    "fields": {
+      "field_name": "system", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 64
+  }, 
+  {
+    "fields": {
+      "field_name": "company", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 65
+  }, 
+  {
+    "fields": {
+      "field_name": "conferenceName", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 66
+  }, 
+  {
+    "fields": {
+      "field_name": "encyclopediaTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 67
+  }, 
+  {
+    "fields": {
+      "field_name": "dictionaryTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 68
+  }, 
+  {
+    "fields": {
+      "field_name": "language", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 69
+  }, 
+  {
+    "fields": {
+      "field_name": "programmingLanguage", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 70
+  }, 
+  {
+    "fields": {
+      "field_name": "university", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 71
+  }, 
+  {
+    "fields": {
+      "field_name": "abstractNote", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 72
+  }, 
+  {
+    "fields": {
+      "field_name": "websiteTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 73
+  }, 
+  {
+    "fields": {
+      "field_name": "reportNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 74
+  }, 
+  {
+    "fields": {
+      "field_name": "billNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 75
+  }, 
+  {
+    "fields": {
+      "field_name": "codeVolume", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 76
+  }, 
+  {
+    "fields": {
+      "field_name": "codePages", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 77
+  }, 
+  {
+    "fields": {
+      "field_name": "dateDecided", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 78
+  }, 
+  {
+    "fields": {
+      "field_name": "reporterVolume", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 79
+  }, 
+  {
+    "fields": {
+      "field_name": "firstPage", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 80
+  }, 
+  {
+    "fields": {
+      "field_name": "documentNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 81
+  }, 
+  {
+    "fields": {
+      "field_name": "dateEnacted", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 82
+  }, 
+  {
+    "fields": {
+      "field_name": "publicLawNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 83
+  }, 
+  {
+    "fields": {
+      "field_name": "country", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 84
+  }, 
+  {
+    "fields": {
+      "field_name": "applicationNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 85
+  }, 
+  {
+    "fields": {
+      "field_name": "forumTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 86
+  }, 
+  {
+    "fields": {
+      "field_name": "episodeNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 87
+  }, 
+  {
+    "fields": {
+      "field_name": "blogTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 88
+  }, 
+  {
+    "fields": {
+      "field_name": "type", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 89
+  }, 
+  {
+    "fields": {
+      "field_name": "medium", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 90
+  }, 
+  {
+    "fields": {
+      "field_name": "title", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 91
+  }, 
+  {
+    "fields": {
+      "field_name": "caseName", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 92
+  }, 
+  {
+    "fields": {
+      "field_name": "nameOfAct", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 93
+  }, 
+  {
+    "fields": {
+      "field_name": "subject", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 94
+  }, 
+  {
+    "fields": {
+      "field_name": "proceedingsTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 95
+  }, 
+  {
+    "fields": {
+      "field_name": "bookTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 96
+  }, 
+  {
+    "fields": {
+      "field_name": "shortTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 97
+  }, 
+  {
+    "fields": {
+      "field_name": "docketNumber", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 98
+  }, 
+  {
+    "fields": {
+      "field_name": "numPages", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 99
+  }, 
+  {
+    "fields": {
+      "field_name": "programTitle", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 100
+  }, 
+  {
+    "fields": {
+      "field_name": "issuingAuthority", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 101
+  }, 
+  {
+    "fields": {
+      "field_name": "filingDate", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 102
+  }, 
+  {
+    "fields": {
+      "field_name": "genre", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 103
+  }, 
+  {
+    "fields": {
+      "field_name": "archive", 
+      "multiple": false, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 104
+  }, 
+  {
+    "fields": {
+      "field_name": "author", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 105
+  }, 
+  {
+    "fields": {
+      "field_name": "contributor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 106
+  }, 
+  {
+    "fields": {
+      "field_name": "editor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 107
+  }, 
+  {
+    "fields": {
+      "field_name": "translator", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 108
+  }, 
+  {
+    "fields": {
+      "field_name": "seriesEditor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 109
+  }, 
+  {
+    "fields": {
+      "field_name": "interviewee", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 110
+  }, 
+  {
+    "fields": {
+      "field_name": "interviewer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 111
+  }, 
+  {
+    "fields": {
+      "field_name": "director", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 112
+  }, 
+  {
+    "fields": {
+      "field_name": "scriptwriter", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 113
+  }, 
+  {
+    "fields": {
+      "field_name": "producer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 114
+  }, 
+  {
+    "fields": {
+      "field_name": "castMember", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 115
+  }, 
+  {
+    "fields": {
+      "field_name": "sponsor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 116
+  }, 
+  {
+    "fields": {
+      "field_name": "counsel", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 117
+  }, 
+  {
+    "fields": {
+      "field_name": "inventor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 118
+  }, 
+  {
+    "fields": {
+      "field_name": "attorneyAgent", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 119
+  }, 
+  {
+    "fields": {
+      "field_name": "recipient", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 120
+  }, 
+  {
+    "fields": {
+      "field_name": "performer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 121
+  }, 
+  {
+    "fields": {
+      "field_name": "composer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 122
+  }, 
+  {
+    "fields": {
+      "field_name": "wordsBy", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 123
+  }, 
+  {
+    "fields": {
+      "field_name": "cartographer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 124
+  }, 
+  {
+    "fields": {
+      "field_name": "programmer", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 125
+  }, 
+  {
+    "fields": {
+      "field_name": "artist", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 126
+  }, 
+  {
+    "fields": {
+      "field_name": "commenter", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 127
+  }, 
+  {
+    "fields": {
+      "field_name": "presenter", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 128
+  }, 
+  {
+    "fields": {
+      "field_name": "guest", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 129
+  }, 
+  {
+    "fields": {
+      "field_name": "podcaster", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 130
+  }, 
+  {
+    "fields": {
+      "field_name": "reviewedAuthor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 131
+  }, 
+  {
+    "fields": {
+      "field_name": "cosponsor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 132
+  }, 
+  {
+    "fields": {
+      "field_name": "bookAuthor", 
+      "multiple": true, 
+      "namespaces": null
+    }, 
+    "model": "zotero.field", 
+    "pk": 133
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "note"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 1
+  }, 
+  {
+    "fields": {
+      "fields": [], 
       "type_name": "book"
     }, 
     "model": "zotero.itemtype", 
-    "pk": 1
+    "pk": 2
   }, 
   {
     "fields": {
-      "fields": [
-        1, 
-        3, 
-        4, 
-        6
-      ], 
+      "fields": [], 
+      "type_name": "bookSection"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 3
+  }, 
+  {
+    "fields": {
+      "fields": [], 
       "type_name": "journalArticle"
     }, 
     "model": "zotero.itemtype", 
-    "pk": 2
+    "pk": 4
   }, 
   {
     "fields": {
-      "content_type": 4, 
-      "item_type": 1, 
-      "object_id": 123
+      "fields": [], 
+      "type_name": "magazineArticle"
     }, 
-    "model": "zotero.taggeditem", 
-    "pk": 1
+    "model": "zotero.itemtype", 
+    "pk": 5
   }, 
   {
     "fields": {
-      "field": 1, 
-      "tagged_item": 1, 
-      "value": "Yerma"
+      "fields": [], 
+      "type_name": "newspaperArticle"
     }, 
-    "model": "zotero.fieldvalue", 
-    "pk": 1
+    "model": "zotero.itemtype", 
+    "pk": 6
   }, 
   {
     "fields": {
-      "field": 4, 
-      "tagged_item": 1, 
-      "value": "Lorca"
+      "fields": [], 
+      "type_name": "thesis"
     }, 
-    "model": "zotero.fieldvalue", 
-    "pk": 2
+    "model": "zotero.itemtype", 
+    "pk": 7
   }, 
   {
     "fields": {
-      "field": 5, 
-      "tagged_item": 1, 
-      "value": "Uno que llega"
+      "fields": [], 
+      "type_name": "letter"
     }, 
-    "model": "zotero.fieldvalue", 
-    "pk": 3
+    "model": "zotero.itemtype", 
+    "pk": 8
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "manuscript"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 9
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "interview"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 10
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "film"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 11
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "artwork"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 12
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "webpage"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 13
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "attachment"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 14
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "report"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 15
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "bill"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 16
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "case"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 17
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "hearing"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 18
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "patent"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 19
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "statute"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 20
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "email"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 21
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "map"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 22
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "blogPost"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 23
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "instantMessage"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 24
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "forumPost"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 25
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "audioRecording"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 26
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "presentation"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 27
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "videoRecording"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 28
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "tvBroadcast"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 29
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "radioBroadcast"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 30
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "podcast"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 31
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "computerProgram"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 32
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "conferencePaper"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 33
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "document"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 34
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "encyclopediaArticle"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 35
+  }, 
+  {
+    "fields": {
+      "fields": [], 
+      "type_name": "dictionaryEntry"
+    }, 
+    "model": "zotero.itemtype", 
+    "pk": 36
   }
 ]
 
