@@ -1,17 +1,18 @@
+# -*- coding: utf-8 -*-
 from django.contrib.contenttypes import generic
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from jsonfield import JSONField
 
 
-#metadata
+#schema
 class Field(models.Model):
     """
     Field in a document: title, publisher, author, etc.
     """
     field_name = models.CharField(_(u'name'), max_length=100)
-    multiple = models.BooleanField(_('creator type?'))
+    multiple = models.BooleanField(_(u'creator type?'))
     namespaces = JSONField(_(u'namespaces'), blank=True)
     
     def __unicode__(self):
@@ -38,14 +39,17 @@ class TaggedItem(models.Model):
     """
     item_type = models.ForeignKey(ItemType, related_name='tagged_items',
         verbose_name=_(u'item type'))
-    content_type = models.ForeignKey(ContentType, related_name='tagged_items',
+    content_type = models.ForeignKey(ContentType,
         verbose_name=_(u'content type'))
     object_id = models.PositiveIntegerField()
     content_object = generic.GenericForeignKey('content_type', 'object_id')
+
+    class Meta:
+        unique_together = ('content_type', 'object_id')
     
     def __unicode__(self):
         field_values = self.fields_values.all()
-        return _(u'content_type: %s, item_type: %s, fields: %s') % \
+        return u'content_type: %s, item_type: %s, fields: %s' % \
             (self.content_type, self.item_type, field_values)
     
     def get_applicable_fields(self):
@@ -60,9 +64,9 @@ class TaggedItem(models.Model):
         """
         return field in self.get_applicable_fields()
     
-    def get_set_fields(self):
+    def get_assigned_fields(self):
         """
-        Returns a list of this item's set fields.
+        Returns a list of assigned fields for this item.
         """
         field_value_list = self.fields_values.all()
         return [field_value.field for field_value in field_value_list]
@@ -74,6 +78,9 @@ class TaggedItem(models.Model):
         field_value_list = self.fields_values.all()
         return [field_value.value 
             for field_value in field_value_list and field_value.field == field]
+    
+#    def save(self, *args, **kwargs):
+#        super(TaggedItem, self).save(*args, **kwargs)
 
 
 class FieldValue(models.Model):
@@ -87,7 +94,16 @@ class FieldValue(models.Model):
         verbose_name=_(u'tagged item'))
     
     def __unicode__(self):
-        return _(u'%s=%s') % (self.field, self.value)
+        return u'%s=%s' % (self.field, self.value)
+    
+    def get_for_object(self, obj):
+        """
+        Create a queryset matching all descriptors associated with the given
+        object.
+        """
+        ctype = ContentType.objects.get_for_model(obj)
+        return self.filter(items__content_type__pk=ctype.pk,
+                           items__object_id=obj.pk)
 
 
 #test

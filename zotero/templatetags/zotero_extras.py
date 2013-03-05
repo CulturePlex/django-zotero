@@ -51,10 +51,7 @@ def render_meta(tagged_item, vocabulary):
     field_value_list = tagged_item.fields_values.all()
     for field_value in field_value_list:
         field = field_value.field
-        if field.namespaces[vocabulary]:
-            name = field.namespaces[vocabulary]
-        else:
-            name = field.name
+        name = field.namespaces.get(vocabulary, field.name)
         value = field_value.value
         
         tag = u'<meta property="%s" content="%s"/>' % (name, value)
