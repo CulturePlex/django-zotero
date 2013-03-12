@@ -44,8 +44,8 @@ class TaggedItem(models.Model):
     object_id = models.PositiveIntegerField()
     content_object = generic.GenericForeignKey('content_type', 'object_id')
 
-    class Meta:
-        unique_together = ('content_type', 'object_id')
+#    class Meta:
+#        unique_together = ('content_type', 'object_id')
     
     def __unicode__(self):
         field_values = self.fields_values.all()
@@ -78,9 +78,6 @@ class TaggedItem(models.Model):
         field_value_list = self.fields_values.all()
         return [field_value.value 
             for field_value in field_value_list and field_value.field == field]
-    
-#    def save(self, *args, **kwargs):
-#        super(TaggedItem, self).save(*args, **kwargs)
 
 
 class FieldValue(models.Model):
@@ -91,19 +88,10 @@ class FieldValue(models.Model):
         verbose_name=_(u'field'))
     value = models.CharField(_(u'value'), max_length=256)
     tagged_item = models.ForeignKey(TaggedItem, related_name='fields_values',
-        verbose_name=_(u'tagged item'))
+                                    verbose_name=_(u'tagged item'))
     
     def __unicode__(self):
         return u'%s=%s' % (self.field, self.value)
-    
-    def get_for_object(self, obj):
-        """
-        Create a queryset matching all descriptors associated with the given
-        object.
-        """
-        ctype = ContentType.objects.get_for_model(obj)
-        return self.filter(items__content_type__pk=ctype.pk,
-                           items__object_id=obj.pk)
 
 
 #test

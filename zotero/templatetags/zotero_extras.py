@@ -1,9 +1,49 @@
-from django.template import Library, Node, TemplateSyntaxError
-from zotero.models import TaggedItem
+from django.template import Library, Node, TemplateSyntaxError, Variable
+from zotero.models import TaggedItem, Field
 
 register = Library()
 
 
+@register.tag
+def create_select(parser, token):
+    """
+    Returns a select for a form.
+    Usage:
+        {% create_select object %}
+    """
+    args = token.split_contents()
+    if not len(args) > 1:
+        raise TemplateSyntaxError('%s requires one argument.' % args[0])
+    
+    field_name = args[1]
+    
+    return SelectNode(field_name)
+
+
+class SelectNode(Node):
+    def __init__(self, field_name):
+        self.field_name = Variable(field_name)
+    
+    def render(self, context):
+        result = u'<select name="zotero-taggeditem-content_type-object_id-0-field" id="zotero-taggeditem-content_type-object_id-0-field">\n'
+        result = u'%s<option value="">---------</option>\n' % result
+        
+        fields = Field.objects.all()
+        index = 1
+        field_name = self.field_name.resolve(context)
+        for field in fields:
+            if field.field_name == field_name:
+                result = u'%s<option value="%d" selected="selected">%s \
+                         </option>\n' % (result, index, field)
+            else:
+                result = u'%s<option value="%d">%s</option>\n' % \
+                         (result, index, field)
+            index += 1
+            
+        return result
+
+
+@register.tag
 def zotero_tags(parser, token):
     """
     Returns the code to be translated by Zotero.
@@ -55,6 +95,6 @@ def render_meta(tagged_item, vocabulary):
         value = field_value.value
         
         tag = u'<meta property="%s" content="%s"/>' % (name, value)
-        result = u'%s%s\n' % (result, tag)
+        result = u'%s\n%s' % (result, tag)
     
     return result

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
-from zotero.models import TaggedItem, FieldValue
+from zotero.models import TaggedItem#, FieldValue
 
 
 @receiver(pre_save, sender=TaggedItem)
