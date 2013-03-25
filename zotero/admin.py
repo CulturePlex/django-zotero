@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 from django.contrib.contenttypes import generic
-from zotero.forms import FieldValueInlineFormset,\
-                         GenericTaggedItemInlineModelForm
-from zotero.models import Field, ItemType, TaggedItem, FieldValue, Document
+from zotero.forms import GenericTagInlineFormset, GenericTagInlineForm
+from zotero.models import Field, ItemType, Tag, Document
 
 
 #schema
@@ -16,7 +15,6 @@ class FieldAdmin(admin.ModelAdmin):
     inlines = [
         FieldInline,
     ]
-    list_display = ('field_name', 'multiple')
 
 
 class ItemTypeAdmin(admin.ModelAdmin):
@@ -32,31 +30,17 @@ admin.site.register(Field, FieldAdmin)
 
 
 #data
-class FieldValueInline(admin.TabularInline):
-    model = FieldValue
+class GenericTagInline(generic.GenericTabularInline):
+    model = Tag
     extra = 0
-    formset = FieldValueInlineFormset
-
-
-class TaggedItemAdmin(admin.ModelAdmin):
-    inlines = [
-        FieldValueInline,
-    ]
-
-admin.site.register(TaggedItem, TaggedItemAdmin)
-
-
-class GenericTaggedItemInline(generic.GenericTabularInline):
-    model = TaggedItem
-    extra = 0
-    form = GenericTaggedItemInlineModelForm
-    template = "admin/edit_inline/tagged_item_inline.html"
+    form = GenericTagInlineForm
+    formset = GenericTagInlineFormset
 
 
 #test
 class DocumentAdmin(admin.ModelAdmin):
     inlines = [
-        GenericTaggedItemInline,
+        GenericTagInline,
     ]
 
 admin.site.register(Document, DocumentAdmin)

@@ -1,50 +1,85 @@
 # -*- coding: utf-8 -*-
 from django.db.models.signals import pre_save
+from django.contrib.contenttypes.models import ContentType
 from django.dispatch import receiver
-from zotero.models import TaggedItem#, FieldValue
+from zotero.models import Tag
 
 
-@receiver(pre_save, sender=TaggedItem)
+@receiver(pre_save, sender=Tag)
 def check_save(sender, **kwargs):
-    pass
-#    """
-#    Checks field applicability and multiplicity.
-#    """
-#    tagged_item = kwargs['instance']
-#    if not tagged_item.id:
-#        print 'Objeto nuevo'
-#    else:
-#        print 'Objeto modificado'
-#    appl_err_list = check_fields_applicable(tagged_item)
-#    mult_err_list = check_fields_multiple(tagged_item)
-#    if appl_err_list or mult_err_list:
-#        raise TypeError((appl_err_list, mult_err_list))
+    """
+    Checks item type uniqueness, field applicability and multiplicity.
+    """
+    tag = kwargs['instance']
+    model = ContentType.objects.get_for_id(tag.content_type.id)
+    tagged_item = model.get_object_for_this_type(pk=tag.object_id)
+    previous_tags = Tag.objects.filter(content_type__pk=model.id,
+                              object_id=tagged_item.id)
+    
+    err_uniq = check_item_type_uniqueness(tag, previous_tags)
+    err_appl = check_field_applicability(tag)
+    err_mult = check_field_multiplicity(tag, previous_tags)
+    err_msg = generate_error_message(tag, err_uniq, err_appl, err_mult)
+    if err_uniq or err_appl or err_mult:
+        raise TypeError(err_msg)
 
 
-def check_fields_applicable(tagged_item):
+def check_item_type_uniqueness(tag, previous_tags):
     """
-    Returns a list of non-applicable fields to this item type.
+    Check the uniqueness of the 'item type' for a tagged item.
     """
-    error_fields = []
-    assigned_fields_list = tagged_item.get_assigned_fields()
-    for field in assigned_fields_list:
-        if not tagged_item.is_applicable_field(field):
-            #if it is not already contained
-            if not field in error_fields:
-                error_fields.append(field)
-        
-    return error_fields
+    fail = False
+    #If the tag is being created...
+    if not tag.id:
+        #... and the new item type is different from previous item types (for
+        #example, different from the first of them), fail
+        fail = previous_tags and tag.item_type != previous_tags[0].item_type
+    #If the tag is being modifying...
+    else:
+        #... but there is only one previous tag (the one that is being
+        #modifying), do not fail
+        fail = previous_tags.count() > 1 and \
+               tag.item_type != previous_tags[0].item_type
+    return fail
 
 
-def check_fields_multiple(tagged_item):
+def check_field_applicability(tag):
     """
-    Returns a list of non-multiple fields with multiple values.
+    Check the applicability of a 'field' for a tagged item.
     """
-    error_fields = []
-    assigned_fields_list = tagged_item.get_assigned_fields()
-    for field in assigned_fields_list:
-        if not field.multiple and assigned_fields_list.count(field) > 1:
-            #if it is not already contained
-            if not field in error_fields:
-                error_fields.append(field)
-    return error_fields
+    #If the new field does not belong to the applicable field list, fail
+    return not tag.field in tag.item_type.fields.all()
+
+
+def check_field_multiplicity(tag, previous_tags):
+    """
+    Check the multiplicity of a 'field' for a tagged item.
+    """
+    fail = False
+    #If the field is single
+    if not tag.field.multiple:
+        #If the tag is being created...
+        if not tag.id:
+            #... and the new field was already included in the previous tags,
+            #fail
+            fail = previous_tags.filter(field=tag.field)
+        #If the tag is being modifying...
+        else:
+            #... but there is only one previous tag (the one that is being
+            #modifying), do not fail
+            fail = previous_tags.filter(field=tag.field).count() > 1
+    return fail
+
+
+def generate_error_message(tag, err_uniq, err_appl, err_mult):
+    """
+    Generate the error message for a tagged item.
+    """
+    err = []
+    if err_uniq:
+        err.append('Uniqueness restriction: item type %s' % tag.item_type)
+    if err_appl:
+        err.append('Applicability restriction: field %s' % tag.field)
+    if err_mult:
+        err.append('Multiplicity restriction: field %s' % tag.field)
+    return err
