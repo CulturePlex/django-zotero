@@ -15,6 +15,7 @@ class FieldAdmin(admin.ModelAdmin):
     inlines = [
         FieldInline,
     ]
+    list_display = ['field_name', 'multiple']
 
 
 class ItemTypeAdmin(admin.ModelAdmin):
@@ -40,7 +41,7 @@ class GenericTagInline(generic.GenericTabularInline):
 #test
 class DocumentAdmin(admin.ModelAdmin):
     inlines = [
-        GenericTagInline,
+        GenericTagInline
     ]
 
 admin.site.register(Document, DocumentAdmin)
