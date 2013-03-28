@@ -1,11 +1,14 @@
 (function($) {
     $(document).ready(function($) {
-        var tabularInlineZotero = ".inline-group[id^='zotero-tag'] .tabular.inline-related"
+        var tabularInlineZotero = "#zotero-tag-content_type-object_id-group .tabular.inline-related"
         var fieldItemType = tabularInlineZotero + " .field-item_type"
         var fieldField = tabularInlineZotero + " .field-field"
         
-        //Applicable fields
         var firstItemTypeSelector = fieldItemType + " select:first";
+        var itemTypeSelectors = fieldItemType + " select";
+        var addAnotherTag = tabularInlineZotero + " a[href='javascript:void(0)']";
+        
+        //Choose applicable fields
         var changeFields = function() {
             $.get("/admin/zotero/itemtype/" + $(firstItemTypeSelector).val() + "/", function(data) {
                 //Show all fields
@@ -40,19 +43,39 @@
                     var nonApplicableOptions = fields + ":nth-child(" + val + ")";
                     $(nonApplicableOptions).hide();
                 }
+                
+                //Listen to click events from "Add another Tag"
+                $(addAnotherTag).click(performActions);
             });
         }
-        changeFields();
-        $(firstItemTypeSelector).change(changeFields);
+        
+        //Set item_type's values
+        var setItemTypesValues = function() {
+            $(itemTypeSelectors).val($(firstItemTypeSelector).val());
+        }
         
         //Hide other item_type selectors
-        var len = $(fieldItemType).length
-        if(len > 2)
-        {
-            var itemTypeSelectors = fieldItemType + " select";
-            $(itemTypeSelectors).slice(1,len-1).hide();
-            var itemTypeAdd = fieldItemType + " a";
-            $(itemTypeAdd).slice(1,len-1).hide();
+        var hideItemType = function() {
+            var len = $(fieldItemType).length
+            if(len > 2)
+            {
+                $(itemTypeSelectors).slice(1,len-1).hide();
+                var itemTypeAdd = fieldItemType + " a";
+                $(itemTypeAdd).slice(1,len-1).hide();
+            }
         }
+        
+        //All actions
+        var performActions = function() {
+//            hideItemType();
+            setItemTypesValues();
+            changeFields();
+        }
+        
+        performActions();
+        $(firstItemTypeSelector).change(function(){
+            setItemTypesValues();
+            changeFields();
+        });
     });
 })(django.jQuery);

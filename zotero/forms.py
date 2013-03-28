@@ -37,4 +37,4 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
 
 class GenericTagInlineForm(forms.ModelForm):
     class Media:
-        js = ("js/tag.js",)
+        js = ("js/tags.js",)
