@@ -10,7 +10,10 @@
         
         //Choose applicable fields
         var changeFields = function() {
-            $.get("/admin/zotero/itemtype/" + $(firstItemTypeSelector).val() + "/", function(data) {
+            var val = $(firstItemTypeSelector).val();
+            if(val == "")
+                val = "1";
+            $.get("/admin/zotero/itemtype/" + val + "/", function(data) {
                 //Show all fields
                 var fields = fieldField + " select option";
                 $(fields).show();
@@ -46,7 +49,7 @@
                 
                 //Listen to click events from "Add another Tag"
                 $(addAnotherTag).click(performActions);
-            });
+            })
         }
         
         //Set item_type's values
