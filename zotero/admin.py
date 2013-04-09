@@ -28,7 +28,7 @@ class ItemTypeAdmin(admin.ModelAdmin):
 
 admin.site.register(ItemType, ItemTypeAdmin)
 admin.site.register(Field, FieldAdmin)
-
+admin.site.register(Tag)
 
 #data
 class GenericTagInline(generic.GenericTabularInline):

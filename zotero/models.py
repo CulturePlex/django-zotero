@@ -34,7 +34,7 @@ class ItemType(models.Model):
 #data
 class Tag(models.Model):
     """
-    A description (item_type, field, value) for a tagged item.
+    A description (item_type, field, value) for an object.
     """
     #Generic foreign key to item
     content_type = models.ForeignKey(ContentType,
@@ -50,6 +50,16 @@ class Tag(models.Model):
     
     def __unicode__(self):
         return u'%s: %s=%s' % (self.item_type, self.field, self.value)
+    
+    @staticmethod
+    def get_tags(obj):
+        ct = ContentType.objects.get_for_model(obj)
+        tags = Tag.objects.filter(content_type__pk=ct.id, object_id=obj.id)
+        return tags
+    
+    @staticmethod
+    def get_object(tag):
+        return tag.content_object
 
 
 #test

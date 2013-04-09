@@ -4,9 +4,13 @@
         var fieldItemType = tabularInlineZotero + " .field-item_type"
         var fieldField = tabularInlineZotero + " .field-field"
         
-        var firstItemTypeSelector = fieldItemType + " select:first";
         var itemTypeSelectors = fieldItemType + " select";
-        var addAnotherTag = tabularInlineZotero + " a[href='javascript:void(0)']";
+        var firstItemTypeSelector = itemTypeSelectors + ":first";
+        var firstItemTypeSelectedOption = firstItemTypeSelector + " option[selected]"
+        
+        var itemTypeSpanClass = "zotero-itemtype-text"
+        var itemTypeSpan = fieldItemType + " span." + itemTypeSpanClass
+        var firstItemTypeSpan = itemTypeSpan + ":first"
         
         //Choose applicable fields
         var changeFields = function() {
@@ -48,17 +52,28 @@
                 }
                 
                 //Listen to click events from "Add another Tag"
+                addAnotherTag = tabularInlineZotero + " a[href='javascript:void(0)']";
                 $(addAnotherTag).click(performActions);
             })
         }
         
+        //Add span
+        var addSpan = function() {
+            var span = "<span class=\"" + itemTypeSpanClass + "\"></span>"
+            $(fieldItemType).append(span);
+        }
+        addSpan();
+        
         //Set item_type's values
         var setItemTypesValues = function() {
             $(itemTypeSelectors).val($(firstItemTypeSelector).val());
+            $(itemTypeSpan).text($(firstItemTypeSelectedOption).text())
         }
         
-        //Hide other item_type selectors
+        //Hide first span and other item_type selectors
         var hideItemType = function() {
+            $(itemTypeSpan).removeAttr('style')
+            $(firstItemTypeSpan).hide()
             var len = $(fieldItemType).length
             if(len > 2)
             {
@@ -70,7 +85,7 @@
         
         //All actions
         var performActions = function() {
-//            hideItemType();
+            hideItemType();
             setItemTypesValues();
             changeFields();
         }

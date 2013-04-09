@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from django.db.models.signals import pre_save
-from django.contrib.contenttypes.models import ContentType
 from django.dispatch import receiver
 from zotero.models import Tag
 
@@ -11,10 +10,8 @@ def check_save(sender, **kwargs):
     Checks item type uniqueness, field applicability and multiplicity.
     """
     tag = kwargs['instance']
-    model = ContentType.objects.get_for_id(tag.content_type.id)
-    tagged_item = model.get_object_for_this_type(pk=tag.object_id)
-    previous_tags = Tag.objects.filter(content_type__pk=model.id,
-                              object_id=tagged_item.id)
+    obj = Tag.get_object(tag)
+    previous_tags = Tag.get_tags(obj)
     
     err_uniq = check_item_type_uniqueness(tag, previous_tags)
     err_appl = check_field_applicability(tag)
@@ -26,7 +23,7 @@ def check_save(sender, **kwargs):
 
 def check_item_type_uniqueness(tag, previous_tags):
     """
-    Check the uniqueness of the 'item type' for a tagged item.
+    Check the uniqueness of the 'item type' for an object.
     """
     fail = False
     #If the tag is being created...
@@ -45,7 +42,7 @@ def check_item_type_uniqueness(tag, previous_tags):
 
 def check_field_applicability(tag):
     """
-    Check the applicability of a 'field' for a tagged item.
+    Check the applicability of a 'field' for an object.
     """
     #If the new field does not belong to the applicable field list, fail
     return not tag.field in tag.item_type.fields.all()
@@ -53,7 +50,7 @@ def check_field_applicability(tag):
 
 def check_field_multiplicity(tag, previous_tags):
     """
-    Check the multiplicity of a 'field' for a tagged item.
+    Check the multiplicity of a 'field' for an object.
     """
     fail = False
     #If the field is single
@@ -73,7 +70,7 @@ def check_field_multiplicity(tag, previous_tags):
 
 def generate_error_message(tag, err_uniq, err_appl, err_mult):
     """
-    Generate the error message for a tagged item.
+    Generate the error message for an object.
     """
     err = []
     if err_uniq:

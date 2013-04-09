@@ -33,6 +33,8 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                             single_fields.append(field)
             except AttributeError:
                 pass
+            except KeyError:
+                pass
 
 
 class GenericTagInlineForm(forms.ModelForm):
