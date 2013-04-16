@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.db.models.signals import pre_save
+from django.db.models.signals import pre_save, post_delete
 from django.dispatch import receiver
 from zotero.models import Tag
 
@@ -80,3 +80,16 @@ def generate_error_message(tag, err_uniq, err_appl, err_mult):
     if err_mult:
         err.append('Multiplicity restriction: field %s' % tag.field)
     return err
+
+
+@receiver(post_delete)
+def delete_tags(sender, **kwargs):
+    """
+    Delete the tags pointing to an object.
+    """
+    try:
+        obj = kwargs['instance']
+        tags = Tag.get_tags(obj)
+        tags.delete()
+    except:
+        pass

@@ -32,9 +32,10 @@
                 {
                     var f = $(applicableFieldsData[i]);
                     var val = f.attr("value");
-                        if(val == "")
-                            val = "0";
                     applicableIndexes = applicableIndexes.concat(parseInt(val));
+//                        if(val == "")
+//                            val = "0";
+//                    applicableIndexes = applicableIndexes.concat(parseInt(val));
                 }
                 var nonApplicableIndexes = [];
                 for(var i = 0; i < allFieldsData.length; i++)
@@ -46,8 +47,9 @@
                 //Hide non applicable fields
                 for(var i = 0; i < nonApplicableIndexes.length; i++)
                 {
-                    var val = parseInt(nonApplicableIndexes[i]) + 1;
-                    var nonApplicableOptions = fields + ":nth-child(" + val + ")";
+                    var nonApplicableOptions = fields + "[value='" + nonApplicableIndexes[i] + "']";
+//                    var val = parseInt(nonApplicableIndexes[i]) + 1;
+//                    var nonApplicableOptions = fields + ":nth-child(" + val + ")";
                     $(nonApplicableOptions).hide();
                 }
                 
