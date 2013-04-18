@@ -1,5 +1,6 @@
 {% extends "admin/base.html" %}
 {% load i18n %}
+{% load url from future %}
 
 {% block title %}{{ title }} | {% trans 'Zotero site admin' %}{% endblock %}
 
@@ -7,4 +8,9 @@
 <h1 id="site-name">{% trans 'Zotero administration' %}</h1>
 {% endblock %}
 
-{% block nav-global %}{% endblock %}
+{% block nav-global %}
+<script>
+    var admin_url = "{% url 'admin:index' %}";
+</script>
+{% endblock %}
+

@@ -17,7 +17,7 @@
             var val = $(firstItemTypeSelector).val();
             if(val == "")
                 val = "1";
-            $.get("/admin/zotero/itemtype/" + val + "/", function(data) {
+            $.get(admin_url + "zotero/itemtype/" + val + "/", function(data) {
                 //Show all fields
                 var fields = fieldField + " select option";
                 $(fields).show();

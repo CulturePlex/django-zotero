@@ -88,8 +88,8 @@ def delete_tags(sender, **kwargs):
     Delete the tags pointing to an object.
     """
     try:
-        obj = kwargs['instance']
+        obj = kwargs.get('instance')
         tags = Tag.get_tags(obj)
         tags.delete()
-    except:
+    except AttributeError:
         pass
