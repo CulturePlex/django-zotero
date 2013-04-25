@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from django import forms
 from django.contrib.contenttypes import generic
+from django.db import transaction
+from models import Tag
 
 
 class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
@@ -12,7 +14,11 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                 item_type = form.cleaned_data['item_type']
                 field = form.cleaned_data['field']
                 delete = form.cleaned_data.get('DELETE')
-                
+            except AttributeError:
+                pass
+            except KeyError:
+                pass
+            else:
                 if first_loop:
                     first_item_type = item_type
                     first_loop = False
@@ -31,10 +37,19 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                                 multiple values.' % field)
                         else:
                             single_fields.append(field)
-            except AttributeError:
-                pass
-            except KeyError:
-                pass
+    
+    @transaction.autocommit
+    def save(self):
+        try:
+            super(GenericTagInlineFormset, self).save()
+        except TypeError, e:
+            if e.message[0].startswith('Uniqueness'):
+                tag = self.forms[0].instance
+                new_item_type = tag.item_type
+                obj = Tag.get_object(tag)
+                tags = Tag.get_tags(obj)
+                tags.update(item_type=new_item_type)
+                self.save()
 
 
 class GenericTagInlineForm(forms.ModelForm):
