@@ -64,7 +64,7 @@ class GenericTagInlineForm(generic.ModelForm):
 def get_tag_formset(obj, data=None):
     Formset = generic.generic_inlineformset_factory(
         Tag,
-        form=GenericTagInlineForm2,
+        form=GenericTagInlineForm,
         formset=GenericTagInlineFormset,
         extra=0
     )
