@@ -1,0 +1,13 @@
+<script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<h1>Formulario</h1>
+{{ formset.media }}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ formset.management_form }}
+    {{ form }}</br>
+    {% for f in formset %}
+        {{ f }}</br>
+    {% endfor %}
+    <input type="submit" value="Save">
+</form>

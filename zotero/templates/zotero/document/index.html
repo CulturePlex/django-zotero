@@ -1,0 +1,10 @@
+{% load url from future %}
+{% if documents %}
+    <ul>
+    {% for doc in documents %}
+        <li><a href="{% url 'zotero:detail' doc.id %}">{{ doc.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No documents.</p>
+{% endif %}
