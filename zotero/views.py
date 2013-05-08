@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
-from django.forms.formsets import formset_factory
-from django.forms.models import modelformset_factory
-import django
-from django.contrib.contenttypes import generic
-from django.forms.models import inlineformset_factory
+import json
+from django.http import HttpResponse
+from zotero.models import ItemType, Field
 
-from zotero.forms import GenericTagInlineForm, GenericTagInlineFormset, DocumentForm, get_tag_formset
-from zotero.models import Document, Tag
+
+def itemtype_fields_view(request, itemtype_id):
+    obj_item_type = ItemType.objects.get(pk=itemtype_id)
+    fields = obj_item_type.get_fields()
+    field_names = [f.field_name for f in fields]
+    json_fields = json.dumps(field_names)
+    return HttpResponse(json_fields, content_type='application/javascript')
+
+
+#test
+from django.shortcuts import render
+from zotero.forms import DocumentForm, get_tag_formset
+from zotero.models import Document
 
 def index(request):
     documents = Document.objects.all()

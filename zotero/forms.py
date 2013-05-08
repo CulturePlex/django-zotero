@@ -2,15 +2,12 @@
 from django import forms
 from django.contrib.contenttypes import generic
 from django.db import transaction
-from django.forms import formsets
 from models import Tag
-
-#test
-from models import Document
 
 
 class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
     def clean(self):
+        import ipdb; ipdb.set_trace()
         single_fields = []
         first_loop = True
         for form in self.forms:
@@ -56,7 +53,20 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                 self.save()
 
 
-class GenericTagInlineForm(generic.ModelForm):
+class TagInlineFormsetAdmin(GenericTagInlineFormset):
+    pass
+
+
+class TagInlineFormAdmin(generic.ModelForm):
+    class Media:
+        js = ("js/tags_admin.js",)
+
+
+class TagInlineFormset(GenericTagInlineFormset):
+    pass
+
+
+class TagInlineForm(generic.ModelForm):
     class Media:
         js = ("js/tags.js",)
 
@@ -64,8 +74,8 @@ class GenericTagInlineForm(generic.ModelForm):
 def get_tag_formset(obj, data=None):
     Formset = generic.generic_inlineformset_factory(
         Tag,
-        form=GenericTagInlineForm,
-        formset=GenericTagInlineFormset,
+        form=TagInlineForm,
+        formset=TagInlineFormset,
         extra=0
     )
     formset = Formset(instance=obj, data=data)
@@ -73,6 +83,7 @@ def get_tag_formset(obj, data=None):
 
 
 #test
+from models import Document
 class DocumentForm(forms.ModelForm):
     class Meta:
         model = Document

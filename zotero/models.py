@@ -18,6 +18,9 @@ class Field(models.Model):
     def __unicode__(self):
         return self.field_name
     
+    def get_item_types(self):
+        return self.item_types.all()
+    
     class Meta:
         ordering = ('field_name',)
 
@@ -32,6 +35,9 @@ class ItemType(models.Model):
     
     def __unicode__(self):
         return self.type_name
+    
+    def get_fields(self):
+        return self.fields.all()
 
 
 #data

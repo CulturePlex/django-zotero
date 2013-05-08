@@ -5,9 +5,9 @@
 <form action="" method="post">
     {% csrf_token %}
     {{ formset.management_form }}
-    {{ form }}</br>
+    {{ form }}<br/>
     {% for f in formset %}
-        {{ f }}</br>
+        {{ f }}<br/>
     {% endfor %}
     <input type="submit" value="Save">
 </form>
