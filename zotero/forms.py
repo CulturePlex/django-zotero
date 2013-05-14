@@ -7,7 +7,6 @@ from models import Tag
 
 class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
     def clean(self):
-        import ipdb; ipdb.set_trace()
         single_fields = []
         first_loop = True
         for form in self.forms:
@@ -63,7 +62,9 @@ class TagInlineFormAdmin(generic.ModelForm):
 
 
 class TagInlineFormset(GenericTagInlineFormset):
-    pass
+    def save(self):
+#        import ipdb; ipdb.set_trace()
+        super(TagInlineFormset, self).save()
 
 
 class TagInlineForm(generic.ModelForm):

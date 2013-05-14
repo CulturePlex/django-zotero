@@ -7,9 +7,9 @@ from zotero.models import ItemType, Field
 def itemtype_fields_view(request, itemtype_id):
     obj_item_type = ItemType.objects.get(pk=itemtype_id)
     fields = obj_item_type.get_fields()
-    field_names = [f.field_name for f in fields]
-    json_fields = json.dumps(field_names)
-    return HttpResponse(json_fields, content_type='application/javascript')
+    field_ids = [f.id for f in fields]
+    json_fields = json.dumps(field_ids)
+    return HttpResponse(json_fields, content_type='text/javascript')
 
 
 #test
