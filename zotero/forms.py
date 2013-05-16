@@ -58,7 +58,7 @@ class TagInlineFormsetAdmin(GenericTagInlineFormset):
 
 class TagInlineFormAdmin(generic.ModelForm):
     class Media:
-        js = ("js/tags_admin.js",)
+        js = ('js/tags_admin.js', )
 
 
 class TagInlineFormset(GenericTagInlineFormset):
@@ -69,7 +69,7 @@ class TagInlineFormset(GenericTagInlineFormset):
 
 class TagInlineForm(generic.ModelForm):
     class Media:
-        js = ("js/tags.js",)
+        js = ('js/tags.js', )#'js/jquery.formset.js', )
 
 
 def get_tag_formset(obj, data=None):
@@ -77,7 +77,7 @@ def get_tag_formset(obj, data=None):
         Tag,
         form=TagInlineForm,
         formset=TagInlineFormset,
-        extra=0
+        extra=0,
     )
     formset = Formset(instance=obj, data=data)
     return formset

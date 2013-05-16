@@ -3,55 +3,38 @@
         // GENERAL VARIABLES
         var admin_url = '/admin/';
         var prefix = 'zotero-tag-content_type-object_id';
-        var numForms = 4;
         var numFields = 133;
         
         
-        // SELECTORS
+        // ORIGINAL SELECTORS
+        var itemTypeLabel = 'label[for^="id_' + prefix + '"][for$="item_type"]';
+        var itemTypeSelect = 'select[id^="id_' + prefix + '"][id$="item_type"]';
+        var fieldSelect = 'select[id^="id_' + prefix + '"][id$="field"]';
+        var deleteCheckbox = 'input[id^="id_' + prefix + '"][id$="DELETE"]';
+        
+        
+        // DERIVED SELECTORS
         // Item types
-        var itemType = 'item_type';
-        var itemTypeLabelAll = 'label[for^="id_' + prefix + '"][for$="' + itemType + '"]';
+        var itemTypeLabelAll = itemTypeLabel
         var itemTypeLabelFirst = itemTypeLabelAll + ':first';
-        var itemTypeSelectAll = 'select[id^="id_' + prefix + '"][id$="' + itemType + '"]'
+        var itemTypeSelectAll = itemTypeSelect
         var itemTypeSelectFirst = itemTypeSelectAll + ':first';
         
         // Fields
-        var field = 'field';
-        var fieldSelectAll = 'select[id^="id_' + prefix + '"][id$="' + field + '"]'
-        var fieldSelectFirst = fieldSelectAll + ':first';
-        var fieldSelectLast = fieldSelectAll + ':last';
-        
-        // Values
-        var value = 'value'
+        var fieldSelectAll = fieldSelect
         
         // Deletes
-        var del = 'DELETE';
-        var deleteCheckboxAll = 'input[id^="id_' + prefix + '"][id$="' + del + '"]';
+        var deleteCheckboxAll = deleteCheckbox
         var deleteCheckboxLast = deleteCheckboxAll + ':last';
-        
-        // Links
-        var add = 'add_tag';
-        var a = '<a href="javascript:void(0)" id="id_' + prefix + '-0-' + add + '">Add another tag</a>';
-        var linkUnique = 'a[id^="id_' + prefix + '"][id$="' + add + '"]';
-        
-        
-        // NEW ELEMENTS
-        var addLink = function() {
-            $(deleteCheckboxLast).after(a);
-        }
-        addLink();
         
         
         // STYLE
         // Add brs
         var addBrs = function() {
-            var br1 = "<br/>"
-            var br2 = "<br/><br/>"
-            $(itemTypeLabelFirst).before(br2);
-            $(itemTypeSelectFirst).after(br2);
-            $(deleteCheckboxAll).after(br1);
-            $(linkUnique).before(br1);
-            $(linkUnique).after(br2);
+            $(itemTypeLabelFirst).before('<br/><br/>');
+            $(itemTypeSelectFirst).after('<br/><br/>');
+            $(deleteCheckboxAll).after('<br/>');
+            $(deleteCheckboxLast).after('<br/><br/>');
         }
         addBrs();
         
@@ -79,9 +62,6 @@
                         $(nonApplicableOptions).hide();
                     }
                 }
-                
-                // Listen to click events from "Add another Tag"
-                $(linkUnique).bind('click', addTag);
             })
         }
         
@@ -110,83 +90,5 @@
             setItemTypesValues();
             changeFields();
         });
-        
-        // Add tags
-        var addTag =  function() {
-            var row = createNewRow();
-            $(deleteCheckboxLast).after('<br/>' + row);
-            $(fieldSelectLast).val(0);
-            performActions();
-            $("#id_" + prefix + "-TOTAL_FORMS").val(numForms + 1);
-
-        }
-        
-        var createNewRow =  function() {
-            var itemType = createItemType();
-            var field = createField();
-            var value = createValue();
-            var del = createDelete();
-            return itemType + field + value + del;
-        }
-        
-        var createItemType =  function() {
-            var label = '<label';
-            label += ' for="id_' + prefix + '-' + numForms + '-' + itemType + '">';
-            label += 'Item type:';
-            label += '</label>';
-            var select = '<select';
-            select += ' name="' + prefix + '-' + numForms + '-' + itemType + '"';
-            select += ' id="id_' + prefix + '-' + numForms + '-' + itemType + '">';
-            select += $(itemTypeSelectFirst).html();
-            select += '</select>';
-            return label + select;
-        }
-        
-        var createField =  function() {
-            var label = '<label';
-            label += ' for="id_' + prefix + '-' + numForms + '-' + field + '">';
-            label += 'Field:';
-            label += '</label>';
-            var select = '<select';
-            select += ' name="' + prefix + '-' + numForms + '-' + field + '"';
-            select += ' id="id_' + prefix + '-' + numForms + '-' + field + '">';
-            select += $(fieldSelectFirst).html();
-            select += '</select>';
-            return label + select;
-        }
-        
-        var createValue =  function() {
-            var label = '<label';
-            label += ' for="id_' + prefix + '-' + numForms + '-' + value + '">';
-            label += 'Value:';
-            label += '</label>';
-            var input = '<input'
-            input += ' name="' + prefix + '-' + numForms + '-' + value + '"'
-            input += ' id="id_' + prefix + '-' + numForms + '-' + value + '"'
-            input += ' type="text"'
-            input += ' name="' + prefix + '-' + numForms + '-' + value + '"'
-            input += ' value="" maxlength="256"/>'
-            return label + input;
-        }
-        
-        var createDelete =  function() {
-            var label = '<label';
-            label += ' for="id_' + prefix + '-' + numForms + '-' + del + '">';
-            label += 'Delete:';
-            label += '</label>';
-            var input = '<input'
-            input += ' name="' + prefix + '-' + numForms + '-' + del + '"'
-            input += ' id="id_' + prefix + '-' + numForms + '-' + del + '"'
-            input += ' type="checkbox"'
-            input += ' name="' + prefix + '-' + numForms + '-' + del + '"'
-            input += ' value="" maxlength="256"/>'
-            return label + input;
-        }
-        
-        // Delete tags
-        var deleteTag =  function() {
-            
-            $(LinkUnique).click(performActions);
-        }
     });
-})(django.jQuery);
+})(jQuery);
