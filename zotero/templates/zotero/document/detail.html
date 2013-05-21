@@ -1,5 +1,5 @@
 {% load url from future %}
-{% load inlines_extras %}
+{% load inline_extras %}
 <html>
 <head>
 <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
@@ -22,16 +22,21 @@
 <!--       });-->
 <!--   })-->
 <!--</script>-->
-<!--</head>-->
+
+
+</head>
 
 <body>
 <!--{{ formset.prefix }}-->
 <!--{% firstof STATIC_URL MEDIA_URL %}-->
-{{ formset.media }}
+
+
 <form id="myForm" action="" method="post">
     {% csrf_token %}
-    {% render_formset formset %}
-    
+    {{ form2 }}
+<div style="margin-left:200px; width:500px">
+    {% render_inline_tags formset %}
+</div>
     <input type="submit" value="Save">
 </form>
 

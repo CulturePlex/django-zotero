@@ -62,14 +62,12 @@ class TagInlineFormAdmin(generic.ModelForm):
 
 
 class TagInlineFormset(GenericTagInlineFormset):
-    def save(self):
-#        import ipdb; ipdb.set_trace()
-        super(TagInlineFormset, self).save()
+    pass
 
 
 class TagInlineForm(generic.ModelForm):
     class Media:
-        js = ('js/tags.js', )#'js/jquery.formset.js', )
+        js = ('js/tags.js', 'js/jquery.formset.js', )
 
 
 def get_tag_formset(obj, data=None):

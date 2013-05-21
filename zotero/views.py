@@ -27,6 +27,7 @@ def detail(request, doc_id):
     
     form = DocumentForm(instance=obj)
     formset = get_tag_formset(obj)
+#    import ipdb; ipdb.set_trace()
     if request.POST:
 #        import ipdb; ipdb.set_trace()
         form = DocumentForm(instance=obj, data=request.POST)
@@ -35,4 +36,4 @@ def detail(request, doc_id):
             form.save()
             formset.save()
     
-    return render(request, 'zotero/document/detail.html', {'form': form, 'formset': formset})
+    return render(request, 'zotero/document/detail.html', {'form2': form, 'formset': formset})
