@@ -33,8 +33,7 @@ class ItemTypeAdmin(admin.ModelAdmin):
     
     def get_urls(self):
         urls = super(ItemTypeAdmin, self).get_urls()
-        field_urls = patterns(
-            '',
+        field_urls = patterns('',
             url(
                 r'^(?P<itemtype_id>.+)/fields/$',
                 self.admin_site.admin_view(

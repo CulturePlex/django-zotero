@@ -2,49 +2,16 @@
 {% load inline_extras %}
 <html>
 <head>
-<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
-<script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
-<!--<script type="text/javascript" src="/static/admin/js/inlines.js"></script>-->
-<!--<script type="text/javascript" src="/static/js/jquery.formset.js"></script>-->
-
-
-<!--<script type="text/javascript">-->
-<!--   $(function() {-->
-<!--       $('#myForm span').formset();-->
-<!--   })-->
-<!--</script>-->
-
-<!--<script type="text/javascript">-->
-<!--   $(function() {-->
-<!--       $('#myForm span').formset({-->
-<!--           prefix: '{{ formset.prefix }}',-->
-<!--           addText: 'anadir texto'-->
-<!--       });-->
-<!--   })-->
-<!--</script>-->
-
-
 </head>
-
 <body>
-<!--{{ formset.prefix }}-->
-<!--{% firstof STATIC_URL MEDIA_URL %}-->
-
-
 <form id="myForm" action="" method="post">
     {% csrf_token %}
     {{ form2 }}
-<div style="margin-left:200px; width:500px">
-    {% render_inline_tags formset %}
-</div>
+    <div style="margin-left:200px; width:500px">
+        {% render_inline_tags formset %}
+    </div>
     <input type="submit" value="Save">
 </form>
-
-
-<!--<h1>{{formset.prefix}}</h1>-->
-<!--<h1>{{formset.total_form_count}}</h1>-->
-<!--<h1>{ url admin:index %}</h1>-->
-
 </body>
 </html>
 

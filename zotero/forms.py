@@ -67,7 +67,11 @@ class TagInlineFormset(GenericTagInlineFormset):
 
 class TagInlineForm(generic.ModelForm):
     class Media:
-        js = ('js/tags.js', 'js/jquery.formset.js', )
+        js = (
+            'js/jquery.js',
+            'js/jquery.formset.js',
+            'js/tags.js',
+        )
 
 
 def get_tag_formset(obj, data=None):
