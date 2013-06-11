@@ -1,0 +1,11 @@
+td.field-DELETE {
+}
+
+td.field-DELETE a.delete-row {
+    background: url(../img/delete.png) no-repeat;
+    width: 16px;
+    height: 15px;
+    margin-left: 16px;
+    text-indent:-9999px;
+    display:block;
+}

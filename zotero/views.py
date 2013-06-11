@@ -4,8 +4,9 @@ from django.http import HttpResponse
 from zotero.models import ItemType, Field
 
 
-def itemtype_fields_view(request, itemtype_id):
-    obj_item_type = ItemType.objects.get(pk=itemtype_id)
+def itemtype_fields_view(request):
+    itemtype_id = request.GET.get("itemtype")
+    obj_item_type = ItemType.objects.get(id=itemtype_id)
     fields = obj_item_type.get_fields()
     field_ids = [f.id for f in fields]
     json_fields = json.dumps(field_ids)
@@ -33,6 +34,7 @@ def detail(request, doc_id):
         form = DocumentForm(instance=obj, data=request.POST)
         formset = get_tag_formset(obj, data=request.POST)
         if form.is_valid() and formset.is_valid():
+#            import ipdb; ipdb.set_trace()
             form.save()
             formset.save()
     

@@ -35,12 +35,12 @@ class ItemTypeAdmin(admin.ModelAdmin):
         urls = super(ItemTypeAdmin, self).get_urls()
         field_urls = patterns('',
             url(
-                r'^(?P<itemtype_id>.+)/fields/$',
+                r'^fields/$',
                 self.admin_site.admin_view(
                     itemtype_fields_view,
                     cacheable=True,
             ),
-            name="itemtype_fields"),
+            name='zotero_itemtype_fields'),
         )
         return field_urls + urls
 

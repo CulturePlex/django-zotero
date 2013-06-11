@@ -1,34 +1,34 @@
+{% load i18n %}
 <div class="{{ formset.prefix }} inline-tags">
   {{ formset.media }}
   {{ formset.management_form }}
+  <input type="hidden" id="zotero-itemtype-url" value="{% url admin:zotero_itemtype_fields %}">
+  <input type="hidden" id="zotero-formset-prefix" value="{{ formset.prefix }}">
   <fieldset>
     {{ formset.non_form_errors }}
     <table>
       <thead>
         <tr>
-          {% for field in formset.form.base_fields %}
-            <th>{{ field|capfirst }}</th>
+          {% for field in formset.form.base_fields.values %}
+            <th>
+                {{ field.label|capfirst }}
+            </th>
           {% endfor %}
-          <th>Delete?</th>
+          <th>{% trans "Delete?" %}</th>
         </tr>
       </thead>
       <tbody>
         {% for form in formset %}
-          {% if form.non_field_errors %}
-            <tr>
-              <td>{{ form.non_field_errors }}</td>
-            </tr>
-          {% endif %}
-            <tr class="{% cycle 'row1' 'row2' %}">
-              {% for field in form %}
-                <td class="field-{{ field.name }}">
-                  {{ field.errors.as_ul }}
-                  {{ field }}
-                </td>
-              {% endfor %}
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+          <tr class="{% cycle 'row1' 'row2' %}">
+            {% for field in form %}
+              <td class="field-{{ field.name }}">
+                {{ field.errors.as_ul }}
+                {{ field }}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </fieldset>
 </div>

@@ -7,7 +7,7 @@ register = t.Library()
 
 
 @register.tag
-def render_inline_tags(parser, token):
+def zotero_inline_tags(parser, token):
     """
     Render an inline formset of tags.
     
