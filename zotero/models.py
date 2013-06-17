@@ -12,7 +12,7 @@ class Field(models.Model):
     Field in a document: title, publisher, author, etc.
     """
     field_name = models.CharField(_(u'name'), max_length=100)
-    multiple = models.BooleanField(_(u'creator type?'))
+    multiple = models.BooleanField(_(u'allows multiple?'))
     namespaces = JSONField(_(u'namespaces'), blank=True)
     
     def __unicode__(self):

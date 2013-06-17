@@ -55,6 +55,7 @@ class TagInlineAdmin(generic.GenericTabularInline):
     extra = 0
     form = TagInlineFormAdmin
     formset = TagInlineFormsetAdmin
+    template = 'admin/edit_inline/extended_tabular.html'
 
 
 # test

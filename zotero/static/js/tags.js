@@ -2,8 +2,7 @@
     $(document).ready(function($) {
         // General variables
         var prefix = $("#zotero-formset-prefix").val();
-        var admin_url = $("#zotero-itemtype-url").val();
-        var numFields = 133;
+        var fields_url = $("#zotero-itemtype-url").val();
         
         
         // Selectors
@@ -23,7 +22,7 @@
             var itemTypeValueFirst = $(itemTypeFirst).val();
             if(itemTypeValueFirst == "")
                 itemTypeValueFirst = "1";
-            $.getJSON(admin_url, {'itemtype': itemTypeValueFirst}, function(data) {
+            $.getJSON(fields_url, {'itemtype': itemTypeValueFirst}, function(data) {
                 // Show all fields
                 var fields = fieldAll + " option";
                 $(fields).show();
@@ -32,6 +31,7 @@
                 var applicableFields = data;
                 
                 // Hide non applicable fields
+                var numFields = $(fieldLast + " option").size() - 1
                 for(var i = 1; i <= numFields; i++)
                 {
                     if(applicableFields.indexOf(i) == -1)
