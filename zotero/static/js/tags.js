@@ -7,15 +7,13 @@
         
         // Selectors
         var container = "div." + prefix;
-        var dataRowAll = container + " tr:not(:hidden)"
-        var itemTypeAll = dataRowAll + " td.field-item_type select";
+        var rowAll = container + " tr:not(:hidden).zotero-tag";
+        var rowLast = rowAll + ":last";
+        var itemTypeAll = rowAll + " td.field-item_type select";
         var itemTypeFirst = itemTypeAll + ":first";
         var fieldAll = container + " td.field-field select";
         var fieldLast = fieldAll + ":last";
         var idAll = container + " td.field-id";
-        var row = container + " tr.tag-form";
-        var rowLast = row + ":last";
-        
         
         // Choose applicable fields
         var changeFields = function() {
@@ -102,7 +100,7 @@
         formset();
         
         // Reset last field
-        var resetLastField = function () {
+        var resetLastField = function() {
             $(fieldLast).val("");
         }
     });

@@ -2,7 +2,7 @@
 <div class="{{ formset.prefix }} inline-tags">
   {{ formset.media }}
   {{ formset.management_form }}
-  <input type="hidden" id="zotero-itemtype-url" value="{% url admin:zotero_itemtype_fields %}">
+  <input type="hidden" id="zotero-itemtype-url" value="{% url 'admin:zotero_itemtype_fields' %}">
   <input type="hidden" id="zotero-formset-prefix" value="{{ formset.prefix }}">
   <fieldset>
     {{ formset.non_form_errors }}
@@ -19,7 +19,7 @@
       </thead>
       <tbody>
         {% for form in formset %}
-          <tr class="{% cycle 'row1' 'row2' %}">
+          <tr class="{% cycle 'row1' 'row2' %} zotero-tag">
             {% for field in form %}
               <td class="field-{{ field.name }}">
                 {{ field.errors.as_ul }}

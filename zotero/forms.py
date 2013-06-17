@@ -79,12 +79,16 @@ class TagInlineForm(generic.ModelForm):
         }
 
 
-def get_tag_formset(obj, data=None):
+def get_tag_formset(obj=None, data=None):
+    if obj and Tag.get_tags(obj):
+        extra = 0
+    else:
+        extra = 1
     Formset = generic.generic_inlineformset_factory(
         Tag,
         form=TagInlineForm,
         formset=TagInlineFormset,
-        extra=0,
+        extra=extra,
     )
     formset = Formset(instance=obj, data=data)
     return formset
