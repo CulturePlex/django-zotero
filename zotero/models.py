@@ -5,6 +5,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from jsonfield import JSONField
 
+from utils import humanize
+
 
 #schema
 class Field(models.Model):
@@ -16,7 +18,7 @@ class Field(models.Model):
     namespaces = JSONField(_(u'namespaces'), blank=True)
     
     def __unicode__(self):
-        return self.field_name
+        return humanize(self.field_name)
     
     def get_item_types(self):
         return self.item_types.all()
@@ -34,7 +36,7 @@ class ItemType(models.Model):
         verbose_name=_(u'fields'))
     
     def __unicode__(self):
-        return self.type_name
+        return humanize(self.type_name)
     
     def get_fields(self):
         return self.fields.all()

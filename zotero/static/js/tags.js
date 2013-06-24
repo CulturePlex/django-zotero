@@ -7,6 +7,8 @@
         
         // Selectors
         var container = "div." + prefix;
+        var header = container + " tr.zotero-header";
+        var errorList = container + " .errorlist";
         var rowAll = container + " tr:not(:hidden).zotero-tag";
         var rowLast = rowAll + ":last";
         var itemTypeAll = rowAll + " td.field-item_type select";
@@ -18,7 +20,7 @@
         // Choose applicable fields
         var changeFields = function() {
             var itemTypeValueFirst = $(itemTypeFirst).val();
-            if(itemTypeValueFirst == "")
+            if(itemTypeValueFirst == "" || itemTypeValueFirst == undefined)
                 itemTypeValueFirst = "1";
             $.getJSON(fields_url, {'itemtype': itemTypeValueFirst}, function(data) {
                 // Show all fields
@@ -53,14 +55,6 @@
             $(idAll).hide();
         }
         
-        // All actions
-        var performActions = function() {
-            hideItemTypeAndId();
-            setItemTypesValues();
-            changeFields();
-        }
-        performActions();
-        
         $(itemTypeAll).change(function(){
             setItemTypesValues();
             changeFields();
@@ -89,8 +83,10 @@
                 removed: (function(row) {
                     performActions();
                     alternatingRows(row);
+                    hideHeader();
                 }),                                // Function called each time a form is deleted
                 added: (function(row) {
+                    checkFirstRow();
                     performActions();
                     alternatingRows(row);
                     resetLastField();
@@ -102,6 +98,37 @@
         // Reset last field
         var resetLastField = function() {
             $(fieldLast).val("");
+            $(rowLast + " .errorlist").hide();
         }
+        
+        // Hide header if no rows
+        var hideHeader = function() {
+            if($(rowAll).length == 0)
+                $(header).hide();
+                $(errorList).hide();
+        }
+        
+        // Empty first row
+        var checkFirstRow = function() {
+            if($(rowAll).length == 1) {
+                $(header).show();
+                $(errorList).hide();
+                $(itemTypeFirst).val("");
+                $(fieldLast).val("");
+            }
+        }
+        
+        
+        
+        
+        
+        
+        // All actions
+        var performActions = function() {
+            hideItemTypeAndId();
+            setItemTypesValues();
+            changeFields();
+        }
+        performActions();
     });
 })(jQuery);

@@ -1,5 +1,5 @@
 {% load i18n %}
-<div class="{{ formset.prefix }} inline-tags">
+<div class="{{ formset.prefix }} zotero-inline-tags">
   {{ formset.media }}
   {{ formset.management_form }}
   <input type="hidden" id="zotero-itemtype-url" value="{% url 'admin:zotero_itemtype_fields' %}">
@@ -8,7 +8,7 @@
     {{ formset.non_form_errors }}
     <table>
       <thead>
-        <tr>
+        <tr class="zotero-header">
           {% for field in formset.form.base_fields.values %}
             <th>
                 {{ field.label|capfirst }}

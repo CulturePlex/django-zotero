@@ -18,7 +18,7 @@ class FieldAdmin(admin.ModelAdmin):
         FieldInlineAdmin,
     )
     list_display = (
-        'field_name',
+        '__unicode__',
         'multiple',
     )
 
