@@ -12,7 +12,7 @@ def zotero_inline_tags(parser, token):
     Render an inline formset of tags.
     
     Usage:
-        {% render_inline_tags formset %}
+        {% zotero_inline_tags formset %}
     """
     
     args = token.split_contents()
