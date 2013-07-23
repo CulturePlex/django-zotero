@@ -1,7 +1,7 @@
 def humanize(s):
     result = ''
-    if s.isupper():
-        result = s.lower()
+    if s.islower() or s.isupper():
+        result = s
     else:
         for c in s:
             if c.isupper():
