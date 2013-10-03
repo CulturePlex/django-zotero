@@ -21,7 +21,7 @@
     "fields": {
       "field_name": "series", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 3
@@ -30,7 +30,7 @@
     "fields": {
       "field_name": "volume", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 4
@@ -39,7 +39,7 @@
     "fields": {
       "field_name": "issue", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 5
@@ -48,7 +48,7 @@
     "fields": {
       "field_name": "edition", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 6
@@ -57,7 +57,7 @@
     "fields": {
       "field_name": "place", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 7
@@ -75,7 +75,7 @@
     "fields": {
       "field_name": "pages", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 9
@@ -120,7 +120,7 @@
     "fields": {
       "field_name": "section", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 14
@@ -138,7 +138,7 @@
     "fields": {
       "field_name": "archiveLocation", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 16
@@ -147,7 +147,7 @@
     "fields": {
       "field_name": "distributor", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 17
@@ -156,7 +156,7 @@
     "fields": {
       "field_name": "extra", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 18
@@ -165,7 +165,7 @@
     "fields": {
       "field_name": "journalAbbreviation", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 19
@@ -201,7 +201,7 @@
     "fields": {
       "field_name": "seriesText", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 23
@@ -219,7 +219,7 @@
     "fields": {
       "field_name": "institution", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 25
@@ -228,7 +228,7 @@
     "fields": {
       "field_name": "reportType", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 26
@@ -246,7 +246,7 @@
     "fields": {
       "field_name": "session", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 28
@@ -255,7 +255,7 @@
     "fields": {
       "field_name": "legislativeBody", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 29
@@ -264,7 +264,7 @@
     "fields": {
       "field_name": "history", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 30
@@ -273,7 +273,7 @@
     "fields": {
       "field_name": "reporter", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 31
@@ -282,7 +282,7 @@
     "fields": {
       "field_name": "court", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 32
@@ -291,7 +291,7 @@
     "fields": {
       "field_name": "numberOfVolumes", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 33
@@ -300,7 +300,7 @@
     "fields": {
       "field_name": "committee", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 34
@@ -309,7 +309,7 @@
     "fields": {
       "field_name": "assignee", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 35
@@ -327,7 +327,7 @@
     "fields": {
       "field_name": "priorityNumbers", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 37
@@ -345,7 +345,7 @@
     "fields": {
       "field_name": "references", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 39
@@ -354,7 +354,7 @@
     "fields": {
       "field_name": "legalStatus", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 40
@@ -372,7 +372,7 @@
     "fields": {
       "field_name": "artworkMedium", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 42
@@ -381,7 +381,7 @@
     "fields": {
       "field_name": "number", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 43
@@ -390,7 +390,7 @@
     "fields": {
       "field_name": "artworkSize", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 44
@@ -399,7 +399,7 @@
     "fields": {
       "field_name": "libraryCatalog", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 45
@@ -417,7 +417,7 @@
     "fields": {
       "field_name": "interviewMedium", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 47
@@ -453,7 +453,7 @@
     "fields": {
       "field_name": "scale", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 51
@@ -489,7 +489,7 @@
     "fields": {
       "field_name": "label", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 55
@@ -507,7 +507,7 @@
     "fields": {
       "field_name": "meetingName", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 57
@@ -516,7 +516,7 @@
     "fields": {
       "field_name": "studio", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 58
@@ -525,7 +525,7 @@
     "fields": {
       "field_name": "runningTime", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 59
@@ -534,7 +534,7 @@
     "fields": {
       "field_name": "network", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 60
@@ -561,7 +561,7 @@
     "fields": {
       "field_name": "version", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 63
@@ -570,7 +570,7 @@
     "fields": {
       "field_name": "system", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 64
@@ -579,7 +579,7 @@
     "fields": {
       "field_name": "company", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 65
@@ -588,7 +588,7 @@
     "fields": {
       "field_name": "conferenceName", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 66
@@ -624,7 +624,7 @@
     "fields": {
       "field_name": "programmingLanguage", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 70
@@ -633,7 +633,7 @@
     "fields": {
       "field_name": "university", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 71
@@ -678,7 +678,7 @@
     "fields": {
       "field_name": "codeVolume", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 76
@@ -687,7 +687,7 @@
     "fields": {
       "field_name": "codePages", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 77
@@ -705,7 +705,7 @@
     "fields": {
       "field_name": "reporterVolume", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 79
@@ -714,7 +714,7 @@
     "fields": {
       "field_name": "firstPage", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 80
@@ -750,7 +750,7 @@
     "fields": {
       "field_name": "country", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 84
@@ -804,7 +804,7 @@
     "fields": {
       "field_name": "medium", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 90
@@ -885,7 +885,7 @@
     "fields": {
       "field_name": "numPages", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 99
@@ -903,7 +903,7 @@
     "fields": {
       "field_name": "issuingAuthority", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 101
@@ -921,7 +921,7 @@
     "fields": {
       "field_name": "genre", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 103
@@ -930,7 +930,7 @@
     "fields": {
       "field_name": "archive", 
       "multiple": false, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 104
@@ -1038,7 +1038,7 @@
     "fields": {
       "field_name": "sponsor", 
       "multiple": true, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 116
@@ -1047,7 +1047,7 @@
     "fields": {
       "field_name": "counsel", 
       "multiple": true, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 117
@@ -1065,7 +1065,7 @@
     "fields": {
       "field_name": "attorneyAgent", 
       "multiple": true, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 119
@@ -1074,7 +1074,7 @@
     "fields": {
       "field_name": "recipient", 
       "multiple": true, 
-      "namespaces": null
+      "namespaces": "{}"
     }, 
     "model": "zotero.field", 
     "pk": 120
