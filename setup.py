@@ -17,9 +17,9 @@ def find_version(*parts):
         if version_match:
             return version_match.group(1)
         else:
-            return '1.0'
+            return '0.1'
     except:
-        return '1.0'
+        return '0.1'
 #    raise RuntimeError("Unable to find version string.")
 
 
