@@ -27,14 +27,11 @@ def detail(request, doc_id):
     obj = Document.objects.get(pk=doc_id)
     
     form = DocumentForm(instance=obj)
-    formset = get_tag_formset(obj)
-#    import ipdb; ipdb.set_trace()
+    formset = get_tag_formset(obj, labels={'item_type': 'Document type'})
     if request.POST:
-#        import ipdb; ipdb.set_trace()
         form = DocumentForm(instance=obj, data=request.POST)
         formset = get_tag_formset(obj, data=request.POST)
         if form.is_valid() and formset.is_valid():
-#            import ipdb; ipdb.set_trace()
             form.save()
             formset.save()
     

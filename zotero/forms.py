@@ -77,9 +77,12 @@ class TagInlineForm(generic.ModelForm):
         css = {
             'all': ('css/tags.css',)
         }
+        labels = {
+            'item_type': 'Writer',
+        }
 
 
-def get_tag_formset(obj=None, data=None):
+def get_tag_formset(obj=None, data=None, labels=None):
     if obj and Tag.get_tags(obj):
         extra = 0
     else:
@@ -91,6 +94,11 @@ def get_tag_formset(obj=None, data=None):
         extra=extra,
     )
     formset = Formset(instance=obj, data=data)
+    if labels:
+        for label in labels:
+            field = formset.form.base_fields.get(label)
+            if field:
+                field.label = labels[label]
     return formset
 
 

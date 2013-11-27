@@ -1,2 +1,6 @@
 include LICENSE
 include README.rst
+recursive-include zotero/fixtures *
+recursive-include zotero/static *
+recursive-include zotero/templates *
+recursive-include zotero/templatetags *
