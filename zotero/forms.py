@@ -77,9 +77,6 @@ class TagInlineForm(generic.ModelForm):
         css = {
             'all': ('css/tags.css',)
         }
-        labels = {
-            'item_type': 'Writer',
-        }
 
 
 def get_tag_formset(obj=None, data=None, labels=None):
