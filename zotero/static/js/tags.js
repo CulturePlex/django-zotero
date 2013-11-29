@@ -152,7 +152,7 @@
             hideItemTypeAndId();
             setItemTypesValues();
             changeFields();
-            showLabelsPlaceholders();debugger;
+            showLabelsPlaceholders();
         }
         performActions();
     });
