@@ -16,3 +16,7 @@ border: 1px solid red;
 color: white;
 background: red url(../img/icon_alert.gif) 5px .5em no-repeat;
 }
+
+.zotero-inline-tags td {
+vertical-align:bottom;
+}

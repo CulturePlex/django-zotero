@@ -79,7 +79,7 @@ class TagInlineForm(generic.ModelForm):
         }
 
 
-def get_tag_formset(obj=None, data=None, labels=None):
+def get_tag_formset(obj=None, data=None, show_labels=False, labels=None):
     if obj and Tag.get_tags(obj):
         extra = 0
     else:
@@ -91,6 +91,7 @@ def get_tag_formset(obj=None, data=None, labels=None):
         extra=extra,
     )
     formset = Formset(instance=obj, data=data)
+    formset.show_labels = show_labels
     if labels:
         for label in labels:
             field = formset.form.base_fields.get(label)
