@@ -27,10 +27,10 @@ def detail(request, doc_id):
     obj = Document.objects.get(pk=doc_id)
     
     form = DocumentForm(instance=obj)
-    formset = get_tag_formset(obj, labels={'item_type': 'Document type'})
+    formset = get_tag_formset(obj, show_labels=False, labels={'item_type': 'Document type'})
     if request.POST:
         form = DocumentForm(instance=obj, data=request.POST)
-        formset = get_tag_formset(obj, data=request.POST)
+        formset = get_tag_formset(obj, data=request.POST, labels={'item_type': 'Document type'})
         if form.is_valid() and formset.is_valid():
             form.save()
             formset.save()

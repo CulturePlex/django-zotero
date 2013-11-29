@@ -20,3 +20,7 @@ background: red url(../img/icon_alert.gif) 5px .5em no-repeat;
 .zotero-inline-tags td {
 vertical-align:bottom;
 }
+
+.zotero-inline-tags .placeholder{
+/*font-style:italic;*/
+}

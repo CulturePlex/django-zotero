@@ -4,11 +4,14 @@
   {{ formset.management_form }}
   <input type="hidden" id="zotero-itemtype-url" value="{% url 'admin:zotero_itemtype_fields' %}">
   <input type="hidden" id="zotero-formset-prefix" value="{{ formset.prefix }}">
+  <input type="hidden" id="zotero-show-labels" value="{{ formset.show_labels }}">
+  <input type="hidden" id="zotero-item_type-label" value="{{ formset.item_type_label }}">
+  <input type="hidden" id="zotero-field-label" value="{{ formset.field_label }}">
+  <input type="hidden" id="zotero-value-label" value="{{ formset.value_label }}">
   <fieldset>
     {{ formset.non_form_errors }}
     <table>
-      {% if formset.show_labels %}
-      <thead>
+      <thead class="zotero-header-labels">
         <tr class="zotero-header">
           {% for field in formset.form.base_fields.values %}
             <th>
@@ -18,7 +21,6 @@
           <th>{% trans "Delete?" %}</th>
         </tr>
       </thead>
-      {% endif %}
       <tbody>
         {% for form in formset %}
           <tr class="{% cycle 'row1' 'row2' %} zotero-tag">

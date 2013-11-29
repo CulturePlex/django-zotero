@@ -92,7 +92,13 @@ def get_tag_formset(obj=None, data=None, show_labels=False, labels=None):
     )
     formset = Formset(instance=obj, data=data)
     formset.show_labels = show_labels
+    formset.item_type_label = 'Item type'
+    formset.field_label = 'Field'
+    formset.value_label = 'Value'
     if labels:
+        formset.item_type_label = labels.get('item_type', 'Item_type')
+        formset.field_label = labels.get('field', 'Field')
+        formset.value_label = labels.get('value', 'Value')
         for label in labels:
             field = formset.form.base_fields.get(label)
             if field:

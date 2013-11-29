@@ -3,6 +3,10 @@
         // General variables
         var prefix = $("#zotero-formset-prefix").val();
         var fields_url = $("#zotero-itemtype-url").val();
+        var show_labels = $("#zotero-show-labels").val();
+        var item_type_label = $("#zotero-item_type-label").val();
+        var field_label = $("#zotero-field-label").val();
+        var value_label = $("#zotero-value-label").val();
         
         
         // Selectors
@@ -15,6 +19,7 @@
         var itemTypeFirst = itemTypeAll + ":first";
         var fieldAll = container + " td.field-field select";
         var fieldLast = fieldAll + ":last";
+        var valueAll = container + " td.field-value input";
         var idAll = container + " td.field-id";
         
         // Choose applicable fields
@@ -118,6 +123,25 @@
             }
         }
         
+        // Show labels/placeholders
+        var showLabelsPlaceholders = function() {
+            if(show_labels == "False") {
+                $("thead.zotero-header-labels").hide();
+                var itemTypeDefault = itemTypeAll + " option[value='']";
+                var fieldDefault = fieldAll + " option[value='']";
+                var valueDefault = valueAll;
+                
+                $(itemTypeDefault).text(item_type_label);
+                $(itemTypeDefault).attr('disabled', 'disabled');
+                $(itemTypeDefault).addClass('placeholder');
+                $(fieldDefault).text(field_label);
+                $(fieldDefault).attr('disabled', 'disabled');
+                $(fieldDefault).addClass('placeholder');
+                $(valueDefault).attr('placeholder', value_label);
+                $(valueDefault).addClass('placeholder');
+            }
+        }
+        
         
         
         
@@ -128,6 +152,7 @@
             hideItemTypeAndId();
             setItemTypesValues();
             changeFields();
+            showLabelsPlaceholders();debugger;
         }
         performActions();
     });
