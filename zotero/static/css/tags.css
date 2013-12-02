@@ -3,6 +3,7 @@ td.field-DELETE a.delete-row {
     width: 16px;
     height: 15px;
     margin-left: 16px;
+    margin-bottom: 6px;
     text-indent:-9999px;
     display:block;
 }
