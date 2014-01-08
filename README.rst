@@ -29,18 +29,18 @@ To use django-zotero_, follow the next steps:
         'zotero',
     )
 
-2) Administration side: add the following code to admin.py:
+2) Administration side: add the following code to admin.py::
 
-  a) Import the class TagInlineAdmin[1]::
+    a) Import the class TagInlineAdmin[1]::
 
-      from zotero.admin import TagInlineAdmin
+        from zotero.admin import TagInlineAdmin
 
-  b) For each model you wish to tag, add to its admin class::
+    b) For each model you wish to tag, add to its admin class::
 
-      inlines = (
-          #...,
-          TagInlineAdmin,
-      )
+        inlines = (
+            #...,
+            TagInlineAdmin,
+        )
 
 3) User side: add the following code:
 
