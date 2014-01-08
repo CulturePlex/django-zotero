@@ -52,17 +52,17 @@ To use django-zotero_, follow the next steps:
 
       ii) In the view that manages the tagged object, instanciate the formset and save it::
 
-          tag_formset = get_tag_formset(
-              obj=form.instance,
-              data=request.POST,
-              show_labels=False,
-              labels={
-                  'item_type': 'Document type',
-                  #...,
-              }
-          )
-          #...
-          tag_formset.save()
+           tag_formset = get_tag_formset(
+               obj=form.instance,
+               data=request.POST,
+               show_labels=False,
+               labels={
+                   'item_type': 'Document type',
+                   #...,
+               }
+           )
+           #...
+           tag_formset.save()
 
    b) In the template that manages the object:
 
@@ -82,10 +82,10 @@ To use django-zotero_, follow the next steps:
 
       ii) Render Zotero_ metadata::
 
-          {% zotero_tags
-              object=document
-              vocabulary="dc"
-              output_method="meta" %}
+           {% zotero_tags
+               object=document
+               vocabulary="dc"
+               output_method="meta" %}
 
 [1] TagInlineAdmin is an inline class ready to be added as inline of other admin class.
 
