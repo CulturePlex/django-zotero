@@ -31,7 +31,7 @@ To use django-zotero_, follow the next steps:
 
 2) Administration side: add the following code to admin.py:
 
-   a) Import the class TagInlineAdmin[1]::
+   a) Import the class TagInlineAdmin [#]_::
 
        from zotero.admin import TagInlineAdmin
 
@@ -46,7 +46,7 @@ To use django-zotero_, follow the next steps:
 
    a) In views.py:
 
-      i) Import the function get_tag_formset[2]::
+      i) Import the function get_tag_formset [#]_::
 
           from zotero.forms import get_tag_formset
 
@@ -66,7 +66,7 @@ To use django-zotero_, follow the next steps:
 
    b) In the template that manages the object:
 
-      i) Import the template tag zotero_inline_tags[3]::
+      i) Import the template tag zotero_inline_tags [#]_::
 
           {% load zotero_inline_tags from zotero_inline_extras %}
 
@@ -76,7 +76,7 @@ To use django-zotero_, follow the next steps:
 
    c) In the template that renders the object:
 
-      i) Import the template tag zotero_tags[4]::
+      i) Import the template tag zotero_tags [#]_::
 
           {% load zotero_tags from zotero_tags_extras %}
 
@@ -87,24 +87,25 @@ To use django-zotero_, follow the next steps:
                vocabulary="dc"
                output_method="meta" %}
 
-[1] TagInlineAdmin is an inline class ready to be added as inline of other admin class.
+.. [#] TagInlineAdmin is an inline class ready to be added as inline of other admin class.
+.. [#] get_tag_formset is a function that gets the formset with Zotero tags for an object. It is based on a generic formset factory and takes four arguments:
 
-[2] get_tag_formset is a function that gets the formset with Zotero tags for an object. It is based on a generic formset factory and takes four arguments:
+ 1) `obj`: object to tag
 
-obj: Object to tag
+ 2) `data`: data to instanciate the content of the formset
 
-data: Data to instanciate the content of the formset
+ 3) `show_labels`: if true, show the labels as headers on the top of the formset; if false, show the labels as placeholders
 
-show_labels: If true, show the labels as headers on the top of the formset; if false, show the labels as placeholders
+ 4) `labels`: set alternative labels - default labels are 'item_type', 'field' and 'value'
 
-labels: Set alternative labels. Default labels are 'item_type', 'field' and 'value'
+.. [#] zotero_inline_tags is a template tag that renders a formset. It takes one argument: the formset it renders.
+.. [#] zotero_tags is a template tag that renders the HTML code of Zotero_ metadata. It takes three arguments:
 
-[3] zotero_inline_tags is a template tag that renders a formset. It takes one argument:
-the formset it renders.
-[4] zotero_tags is a template tag that renders the HTML code of Zotero_ metadata. It takes four arguments:
-object: Tagged object
-vocabulary: The vocabulary to code the metadata. Currently it works with Dublin Core ("dc")
-output_method: The method to code the metadata. Currently it works HTML <meta> tags ("meta")
+ 1) `object`: tagged object
+
+ 2) `vocabulary`: the vocabulary to code the metadata - currently it works with Dublin Core ("dc")
+
+ 3) `output_method`: the method to code the metadata - currently it works HTML <meta> tags ("meta")
 
 .. _django-zotero: https://pypi.python.org/pypi/django-zotero/0.1
 .. _django: https://www.djangoproject.com/
