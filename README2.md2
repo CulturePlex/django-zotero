@@ -31,61 +31,61 @@ To use django-zotero_, follow the next steps:
 
 2) Administration side: add the following code to admin.py:
 
-    a) Import the class TagInlineAdmin[1]::
+  a) Import the class TagInlineAdmin[1]::
 
-        from zotero.admin import TagInlineAdmin
+      from zotero.admin import TagInlineAdmin
 
-    b) For each model you wish to tag, add to its admin class::
+  b) For each model you wish to tag, add to its admin class::
 
-        inlines = (
-            #...,
-            TagInlineAdmin,
-        )
+      inlines = (
+          #...,
+          TagInlineAdmin,
+      )
 
 3) User side: add the following code:
 
-    a) In views.py:
+  a) In views.py:
 
-        i) Import the function get_tag_formset[2]::
+    i) Import the function get_tag_formset[2]::
 
-            from zotero.forms import get_tag_formset
+        from zotero.forms import get_tag_formset
 
-        ii) In the view that manages the tagged object, instanciate the formset and save it::
+    ii) In the view that manages the tagged object, instanciate the formset and save it::
 
-             tag_formset = get_tag_formset(
-                 obj=form.instance,
-                 data=request.POST,
-                 show_labels=False,
-                 labels={
-                     'item_type': 'Document type',
-                     #...,
-                 }
-             )
-             #...
-             tag_formset.save()
+         tag_formset = get_tag_formset(
+             obj=form.instance,
+             data=request.POST,
+             show_labels=False,
+             labels={
+                 'item_type': 'Document type',
+                 #...,
+             }
+         )
+         #...
+         tag_formset.save()
  
-    b) In the template that manages the object:
+  b) In the template that manages the object:
 
-        i) Import the template tag zotero_inline_tags[3]::
+    i) Import the template tag zotero_inline_tags[3]::
 
-            {% load zotero_inline_tags from zotero_inline_extras %}
+        {% load zotero_inline_tags from zotero_inline_extras %}
 
-        ii) Render the formset::
+    ii) Render the formset::
 
-            {% zotero_inline_tags formset %}
+        {% zotero_inline_tags formset %}
 
   c) In the template that renders the object:
 
-        i) Import the template tag zotero_tags[4]::
+    i) Import the template tag zotero_tags[4]::
 
-            {% load zotero_tags from zotero_tags_extras %}
+        {% load zotero_tags from zotero_tags_extras %}
 
-        ii) Render Zotero_ metadata::
+    ii) Render Zotero_ metadata::
 
-             {% zotero_tags
-                 object=document
-                 vocabulary="dc"
-                 output_method="meta" %}
+         {% zotero_tags
+             object=document
+             vocabulary="dc"
+             output_method="meta" %}
 
 [1] TagInlineAdmin is an inline class ready to be added as inline of other admin class.
 
