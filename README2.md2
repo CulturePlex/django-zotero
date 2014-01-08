@@ -6,8 +6,11 @@ django-zotero_ is a django_ app that provides a generic formset to tag any djang
 Installation
 ------------
 First of all, it is needed to have pip_ installed on your system. It is strongly recommended to install virtualenv_ and virtualenvwrapper_ to take the most advantage of pip_.
+
 To install pip_, go to http://www.pip-installer.org/en/latest/installing.html
+
 To install virtualenv_, go to https://pypi.python.org/pypi/virtualenv
+
 To install virtualenvwrapper_, go to http://virtualenvwrapper.readthedocs.org/en/latest/install.html#basic-installation
 
 Now install django-zotero_:
@@ -19,82 +22,70 @@ Usage
 -----
 To use django-zotero_, follow the next steps:
 
-1) Django settings: add the app name to INSTALLED_APPS in settings.py:
+1) Django settings: add the app name to INSTALLED_APPS in settings.py::
 
-  INSTALLED_APPS = (
-
-      ...,
-
-      'zotero',
-
-  )
+    INSTALLED_APPS = (
+        #...,
+        'zotero',
+    )
 
 2) Administration side: add the following code to admin.py:
 
-  a) Import the class TagInlineAdmin[1]:
+  a) Import the class TagInlineAdmin[1]::
 
-    from zotero.admin import TagInlineAdmin
+      from zotero.admin import TagInlineAdmin
 
-  b) For each model you wish to tag, add to its admin class:
+  b) For each model you wish to tag, add to its admin class::
 
-    inlines = (
-
-        ...,
-
-        TagInlineAdmin,
-
-    )
+      inlines = (
+          #...,
+          TagInlineAdmin,
+      )
 
 3) User side: add the following code:
 
   a) In views.py:
 
-    1) Import the function get_tag_formset[2]:
+    1) Import the function get_tag_formset[2]::
 
-      from zotero.forms import get_tag_formset
+        from zotero.forms import get_tag_formset
 
-    2) In the view that manages the tagged object, instanciate the formset and save it:
+    2) In the view that manages the tagged object, instanciate the formset and save it::
 
-      tag_formset = get_tag_formset(
-
-          obj=form.instance,
-
-          data=request.POST,
-
-          show_labels=False,
-
-          labels={'item_type': 'Document type',}
-
-      )
-
-      ...
-
-      tag_formset.save()
+        tag_formset = get_tag_formset(
+            obj=form.instance,
+            data=request.POST,
+            show_labels=False,
+            labels={
+                'item_type': 'Document type',
+                #...,
+            }
+        )
+        #...
+        tag_formset.save()
 
   b) In the template that manages the object:
 
-    1) Import the template tag zotero_inline_tags[3]:
+    1) Import the template tag zotero_inline_tags[3]::
 
-      {% load zotero_inline_tags from zotero_inline_extras %}
+        {% load zotero_inline_tags from zotero_inline_extras %}
 
-    2) Render the formset:
+    2) Render the formset::
 
-      {% zotero_inline_tags formset %}
+        {% zotero_inline_tags formset %}
 
   c) In the template that renders the object:
 
-    1) Import the template tag zotero_tags[4]:
+    1) Import the template tag zotero_tags[4]::
 
-      {% load zotero_tags from zotero_tags_extras %}
+        {% load zotero_tags from zotero_tags_extras %}
 
-    2) Render Zotero_ metadata:
+    2) Render Zotero_ metadata::
 
-      {% zotero_tags
-          object=document
-
-          vocabulary="dc"
-
-          output_method="meta" %}
+        {% zotero_tags
+            object=document
+            vocabulary="dc"
+            output_method="meta" %}
 
 [1] TagInlineAdmin is an inline class ready to be added as inline of other admin class.
 
