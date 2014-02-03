@@ -1,0 +1,17 @@
+{% load url from future %}
+{% load zotero_inline_extras %}
+<html>
+<head>
+</head>
+<body>
+<form id="myForm" action="" method="post">
+    {% csrf_token %}
+    {{ form2 }}
+    <div style="margin-left:200px; width:500px">
+        {% zotero_inline_tags formset %}
+    </div>
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>
+

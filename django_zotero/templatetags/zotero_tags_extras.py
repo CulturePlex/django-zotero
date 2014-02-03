@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.template import Library, Node, TemplateSyntaxError, Variable
-from zotero.models import Tag
+from django_zotero.models import Tag
 
 register = Library()
 

@@ -44,7 +44,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         ],
     zip_safe=False,
-    packages=['zotero'],
+    packages=['django_zotero'],
     include_package_data=True,
     install_requires=['jsonfield'],
 )

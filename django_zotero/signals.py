@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db.models.signals import pre_save, post_delete
 from django.dispatch import receiver
-from zotero.models import Tag
+from django_zotero.models import Tag
 
 
 @receiver(pre_save, sender=Tag)

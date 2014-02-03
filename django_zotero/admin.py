@@ -2,9 +2,9 @@
 from django.conf.urls import patterns, url
 from django.contrib import admin
 from django.contrib.contenttypes import generic
-from zotero.forms import TagInlineFormsetAdmin, TagInlineFormAdmin
-from zotero.models import Field, ItemType, Tag, Document
-from zotero.views import itemtype_fields_view
+from django_zotero.forms import TagInlineFormsetAdmin, TagInlineFormAdmin
+from django_zotero.models import Field, ItemType, Tag, Document
+from django_zotero.views import itemtype_fields_view
 
 
 # schema

@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load url from future %}
+
+{% block title %}{{ title }} | {% trans 'Zotero site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Zotero administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}
+{% endblock %}
+

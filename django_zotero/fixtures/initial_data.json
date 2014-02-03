@@ -5,7 +5,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"source\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 1
   }, 
   {
@@ -14,7 +14,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"rights\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 2
   }, 
   {
@@ -23,7 +23,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 3
   }, 
   {
@@ -32,7 +32,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 4
   }, 
   {
@@ -41,7 +41,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 5
   }, 
   {
@@ -50,7 +50,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 6
   }, 
   {
@@ -59,7 +59,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 7
   }, 
   {
@@ -68,7 +68,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"publisher\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 8
   }, 
   {
@@ -77,7 +77,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 9
   }, 
   {
@@ -86,7 +86,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 10
   }, 
   {
@@ -95,7 +95,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 11
   }, 
   {
@@ -104,7 +104,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 12
   }, 
   {
@@ -113,7 +113,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 13
   }, 
   {
@@ -122,7 +122,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 14
   }, 
   {
@@ -131,7 +131,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 15
   }, 
   {
@@ -140,7 +140,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 16
   }, 
   {
@@ -149,7 +149,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 17
   }, 
   {
@@ -158,7 +158,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 18
   }, 
   {
@@ -167,7 +167,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 19
   }, 
   {
@@ -176,7 +176,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 20
   }, 
   {
@@ -185,7 +185,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 21
   }, 
   {
@@ -194,7 +194,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 22
   }, 
   {
@@ -203,7 +203,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 23
   }, 
   {
@@ -212,7 +212,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 24
   }, 
   {
@@ -221,7 +221,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 25
   }, 
   {
@@ -230,7 +230,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 26
   }, 
   {
@@ -239,7 +239,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 27
   }, 
   {
@@ -248,7 +248,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 28
   }, 
   {
@@ -257,7 +257,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 29
   }, 
   {
@@ -266,7 +266,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 30
   }, 
   {
@@ -275,7 +275,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 31
   }, 
   {
@@ -284,7 +284,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 32
   }, 
   {
@@ -293,7 +293,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 33
   }, 
   {
@@ -302,7 +302,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 34
   }, 
   {
@@ -311,7 +311,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 35
   }, 
   {
@@ -320,7 +320,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 36
   }, 
   {
@@ -329,7 +329,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 37
   }, 
   {
@@ -338,7 +338,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 38
   }, 
   {
@@ -347,7 +347,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 39
   }, 
   {
@@ -356,7 +356,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 40
   }, 
   {
@@ -365,7 +365,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 41
   }, 
   {
@@ -374,7 +374,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 42
   }, 
   {
@@ -383,7 +383,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 43
   }, 
   {
@@ -392,7 +392,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 44
   }, 
   {
@@ -401,7 +401,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 45
   }, 
   {
@@ -410,7 +410,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"format\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 46
   }, 
   {
@@ -419,7 +419,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 47
   }, 
   {
@@ -428,7 +428,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 48
   }, 
   {
@@ -437,7 +437,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 49
   }, 
   {
@@ -446,7 +446,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 50
   }, 
   {
@@ -455,7 +455,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 51
   }, 
   {
@@ -464,7 +464,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 52
   }, 
   {
@@ -473,7 +473,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 53
   }, 
   {
@@ -482,7 +482,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"format\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 54
   }, 
   {
@@ -491,7 +491,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 55
   }, 
   {
@@ -500,7 +500,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 56
   }, 
   {
@@ -509,7 +509,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 57
   }, 
   {
@@ -518,7 +518,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 58
   }, 
   {
@@ -527,7 +527,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 59
   }, 
   {
@@ -536,7 +536,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 60
   }, 
   {
@@ -545,7 +545,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 61
   }, 
   {
@@ -554,7 +554,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 62
   }, 
   {
@@ -563,7 +563,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 63
   }, 
   {
@@ -572,7 +572,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 64
   }, 
   {
@@ -581,7 +581,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 65
   }, 
   {
@@ -590,7 +590,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 66
   }, 
   {
@@ -599,7 +599,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 67
   }, 
   {
@@ -608,7 +608,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 68
   }, 
   {
@@ -617,7 +617,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"language\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 69
   }, 
   {
@@ -626,7 +626,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 70
   }, 
   {
@@ -635,7 +635,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 71
   }, 
   {
@@ -644,7 +644,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"description\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 72
   }, 
   {
@@ -653,7 +653,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 73
   }, 
   {
@@ -662,7 +662,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 74
   }, 
   {
@@ -671,7 +671,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 75
   }, 
   {
@@ -680,7 +680,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 76
   }, 
   {
@@ -689,7 +689,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 77
   }, 
   {
@@ -698,7 +698,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 78
   }, 
   {
@@ -707,7 +707,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 79
   }, 
   {
@@ -716,7 +716,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 80
   }, 
   {
@@ -725,7 +725,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 81
   }, 
   {
@@ -734,7 +734,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 82
   }, 
   {
@@ -743,7 +743,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 83
   }, 
   {
@@ -752,7 +752,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 84
   }, 
   {
@@ -761,7 +761,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 85
   }, 
   {
@@ -770,7 +770,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 86
   }, 
   {
@@ -779,7 +779,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 87
   }, 
   {
@@ -788,7 +788,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 88
   }, 
   {
@@ -797,7 +797,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"type\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 89
   }, 
   {
@@ -806,7 +806,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 90
   }, 
   {
@@ -815,7 +815,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 91
   }, 
   {
@@ -824,7 +824,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 92
   }, 
   {
@@ -833,7 +833,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 93
   }, 
   {
@@ -842,7 +842,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"subject\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 94
   }, 
   {
@@ -851,7 +851,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 95
   }, 
   {
@@ -860,7 +860,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 96
   }, 
   {
@@ -869,7 +869,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 97
   }, 
   {
@@ -878,7 +878,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"identifier\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 98
   }, 
   {
@@ -887,7 +887,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 99
   }, 
   {
@@ -896,7 +896,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"title\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 100
   }, 
   {
@@ -905,7 +905,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 101
   }, 
   {
@@ -914,7 +914,7 @@
       "multiple": false, 
       "namespaces": "{\"dc\":\"date\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 102
   }, 
   {
@@ -923,7 +923,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 103
   }, 
   {
@@ -932,7 +932,7 @@
       "multiple": false, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 104
   }, 
   {
@@ -941,7 +941,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 105
   }, 
   {
@@ -950,7 +950,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 106
   }, 
   {
@@ -959,7 +959,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 107
   }, 
   {
@@ -968,7 +968,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 108
   }, 
   {
@@ -977,7 +977,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 109
   }, 
   {
@@ -986,7 +986,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 110
   }, 
   {
@@ -995,7 +995,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 111
   }, 
   {
@@ -1004,7 +1004,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 112
   }, 
   {
@@ -1013,7 +1013,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 113
   }, 
   {
@@ -1022,7 +1022,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 114
   }, 
   {
@@ -1031,7 +1031,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 115
   }, 
   {
@@ -1040,7 +1040,7 @@
       "multiple": true, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 116
   }, 
   {
@@ -1049,7 +1049,7 @@
       "multiple": true, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 117
   }, 
   {
@@ -1058,7 +1058,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 118
   }, 
   {
@@ -1067,7 +1067,7 @@
       "multiple": true, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 119
   }, 
   {
@@ -1076,7 +1076,7 @@
       "multiple": true, 
       "namespaces": "{}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 120
   }, 
   {
@@ -1085,7 +1085,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 121
   }, 
   {
@@ -1094,7 +1094,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 122
   }, 
   {
@@ -1103,7 +1103,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 123
   }, 
   {
@@ -1112,7 +1112,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 124
   }, 
   {
@@ -1121,7 +1121,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 125
   }, 
   {
@@ -1130,7 +1130,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 126
   }, 
   {
@@ -1139,7 +1139,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 127
   }, 
   {
@@ -1148,7 +1148,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 128
   }, 
   {
@@ -1157,7 +1157,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 129
   }, 
   {
@@ -1166,7 +1166,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 130
   }, 
   {
@@ -1175,7 +1175,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 131
   }, 
   {
@@ -1184,7 +1184,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"contributor\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 132
   }, 
   {
@@ -1193,7 +1193,7 @@
       "multiple": true, 
       "namespaces": "{\"dc\":\"creator\"}"
     }, 
-    "model": "zotero.field", 
+    "model": "django_zotero.field", 
     "pk": 133
   }, 
   {
@@ -1201,7 +1201,7 @@
       "fields": [], 
       "type_name": "note"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 1
   }, 
   {
@@ -1237,7 +1237,7 @@
       ], 
       "type_name": "book"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 2
   }, 
   {
@@ -1275,7 +1275,7 @@
       ], 
       "type_name": "bookSection"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 3
   }, 
   {
@@ -1312,7 +1312,7 @@
       ], 
       "type_name": "journalArticle"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 4
   }, 
   {
@@ -1343,7 +1343,7 @@
       ], 
       "type_name": "magazineArticle"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 5
   }, 
   {
@@ -1375,7 +1375,7 @@
       ], 
       "type_name": "newspaperArticle"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 6
   }, 
   {
@@ -1403,7 +1403,7 @@
       ], 
       "type_name": "thesis"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 7
   }, 
   {
@@ -1429,7 +1429,7 @@
       ], 
       "type_name": "letter"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 8
   }, 
   {
@@ -1457,7 +1457,7 @@
       ], 
       "type_name": "manuscript"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 9
   }, 
   {
@@ -1484,7 +1484,7 @@
       ], 
       "type_name": "interview"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 10
   }, 
   {
@@ -1514,7 +1514,7 @@
       ], 
       "type_name": "film"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 11
   }, 
   {
@@ -1540,7 +1540,7 @@
       ], 
       "type_name": "artwork"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 12
   }, 
   {
@@ -1563,7 +1563,7 @@
       ], 
       "type_name": "webpage"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 13
   }, 
   {
@@ -1575,7 +1575,7 @@
       ], 
       "type_name": "attachment"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 14
   }, 
   {
@@ -1607,7 +1607,7 @@
       ], 
       "type_name": "report"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 15
   }, 
   {
@@ -1635,7 +1635,7 @@
       ], 
       "type_name": "bill"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 16
   }, 
   {
@@ -1662,7 +1662,7 @@
       ], 
       "type_name": "case"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 17
   }, 
   {
@@ -1690,7 +1690,7 @@
       ], 
       "type_name": "hearing"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 18
   }, 
   {
@@ -1722,7 +1722,7 @@
       ], 
       "type_name": "patent"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 19
   }, 
   {
@@ -1749,7 +1749,7 @@
       ], 
       "type_name": "statute"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 20
   }, 
   {
@@ -1770,7 +1770,7 @@
       ], 
       "type_name": "email"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 21
   }, 
   {
@@ -1802,7 +1802,7 @@
       ], 
       "type_name": "map"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 22
   }, 
   {
@@ -1825,7 +1825,7 @@
       ], 
       "type_name": "blogPost"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 23
   }, 
   {
@@ -1846,7 +1846,7 @@
       ], 
       "type_name": "instantMessage"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 24
   }, 
   {
@@ -1868,7 +1868,7 @@
       ], 
       "type_name": "forumPost"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 25
   }, 
   {
@@ -1902,7 +1902,7 @@
       ], 
       "type_name": "audioRecording"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 26
   }, 
   {
@@ -1925,7 +1925,7 @@
       ], 
       "type_name": "presentation"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 27
   }, 
   {
@@ -1960,7 +1960,7 @@
       ], 
       "type_name": "videoRecording"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 28
   }, 
   {
@@ -1994,7 +1994,7 @@
       ], 
       "type_name": "tvBroadcast"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 29
   }, 
   {
@@ -2028,7 +2028,7 @@
       ], 
       "type_name": "radioBroadcast"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 30
   }, 
   {
@@ -2052,7 +2052,7 @@
       ], 
       "type_name": "podcast"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 31
   }, 
   {
@@ -2082,7 +2082,7 @@
       ], 
       "type_name": "computerProgram"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 32
   }, 
   {
@@ -2118,7 +2118,7 @@
       ], 
       "type_name": "conferencePaper"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 33
   }, 
   {
@@ -2146,7 +2146,7 @@
       ], 
       "type_name": "document"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 34
   }, 
   {
@@ -2183,7 +2183,7 @@
       ], 
       "type_name": "encyclopediaArticle"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 35
   }, 
   {
@@ -2215,7 +2215,7 @@
       ], 
       "type_name": "dictionaryEntry"
     }, 
-    "model": "zotero.itemtype", 
+    "model": "django_zotero.itemtype", 
     "pk": 36
   }
 ]

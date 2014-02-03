@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 from django.http import HttpResponse
-from zotero.models import ItemType, Field
+from django_zotero.models import ItemType, Field
 
 
 def itemtype_fields_view(request):
@@ -15,8 +15,8 @@ def itemtype_fields_view(request):
 
 #test
 from django.shortcuts import render
-from zotero.forms import DocumentForm, get_tag_formset
-from zotero.models import Document
+from django_zotero.forms import DocumentForm, get_tag_formset
+from django_zotero.models import Document
 
 def index(request):
     documents = Document.objects.all()

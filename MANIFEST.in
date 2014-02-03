@@ -1,6 +1,6 @@
 include LICENSE
 include README.rst
-recursive-include zotero/fixtures *
-recursive-include zotero/static *
-recursive-include zotero/templates *
-recursive-include zotero/templatetags *
+recursive-include django_zotero/fixtures *
+recursive-include django_zotero/static *
+recursive-include django_zotero/templates *
+recursive-include django_zotero/templatetags *
