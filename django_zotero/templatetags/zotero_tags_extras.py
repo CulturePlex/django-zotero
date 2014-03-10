@@ -87,7 +87,10 @@ def render_meta(obj, vocabulary):
         for tag in tags:
             field = tag.field
             name = field.namespaces.get(vocabulary, field.field_name)
+            f_lower = field.lower()
             value = tag.value
+            if f_lower == 'isbn' or f_lower == 'issn' or f_lower == 'doi':
+                value = '%s %s' % (f_lower, value)
             meta_tag = u'<meta property="DC.%s" content="%s"/>' % (name, value)
             result = u'%s\n%s' % (result, meta_tag)
     return result
