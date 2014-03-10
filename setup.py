@@ -10,6 +10,7 @@ def read(*parts):
 
 
 def find_version(*parts):
+    default = '0.2'
     try:
         version_file = read(*parts)
         version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
@@ -17,9 +18,9 @@ def find_version(*parts):
         if version_match:
             return version_match.group(1)
         else:
-            return '0.1'
+            return default
     except:
-        return '0.1'
+        return default
 #    raise RuntimeError("Unable to find version string.")
 
 
