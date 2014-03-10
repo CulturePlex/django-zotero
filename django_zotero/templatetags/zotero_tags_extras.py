@@ -89,7 +89,7 @@ def render_meta(obj, vocabulary):
             name = field.namespaces.get(vocabulary, field.field_name)
             value = tag.value
             if name == 'identifier':
-                value = '%s %s' % (field.lower(), value)
+                value = '%s %s' % (field.field_name.lower(), value)
             meta_tag = u'<meta property="DC.%s" content="%s"/>' % (name, value)
             result = u'%s\n%s' % (result, meta_tag)
     return result
