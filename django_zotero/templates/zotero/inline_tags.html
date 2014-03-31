@@ -1,6 +1,8 @@
 {% load i18n %}
 <div class="{{ formset.prefix }} zotero-inline-tags">
-  {{ formset.media }}
+  {% if media %}
+      {{ formset.media }}
+  {% endif %}
   {{ formset.management_form }}
   <input type="hidden" id="zotero-itemtype-url" value="{% url 'admin:zotero_itemtype_fields' %}">
   <input type="hidden" id="zotero-formset-prefix" value="{{ formset.prefix }}">

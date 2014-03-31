@@ -12,25 +12,48 @@ def zotero_inline_tags(parser, token):
     Render an inline formset of tags.
     
     Usage:
-        {% zotero_inline_tags formset %}
+        {% zotero_inline_tags formset[ option] %}
+        option = "all" | "media" | "formset"
     """
     
     args = token.split_contents()
     length = len(args)
-    if length != 2:
-        raise t.TemplateSyntaxError('%s requires 2 arguments.' % args[0])
+    if length == 2:
+        rendered_node = RenderedAllNode(args[1])
+    elif length == 3 and args[2].lower() == u'all':
+        rendered_node = RenderedAllNode(args[1])
+    elif length == 3 and args[2].lower() == u'media':
+        rendered_node = RenderedMediaNode(args[1])
+    elif length == 3 and args[2].lower() == u'formset':
+        rendered_node = RenderedFormsetNode(args[1])
+    else:
+        raise t.TemplateSyntaxError('Incorrect arguments in %s.' % args[0])
     
-    return RenderedFormsetNode(args[1])
+    return rendered_node
 
 
-class RenderedFormsetNode(t.Node):
+class RenderedNode(t.Node):
     def __init__(self, formset):
-        self.fs_name = formset
-        self.fs_value = t.Variable(formset)
-    
+        self.formset = t.Variable(formset)
+
+
+class RenderedAllNode(RenderedNode):
     def render(self, context):
-        fs = self.fs_name
-        fs_val = self.fs_value.resolve(context)
+        formset = self.formset.resolve(context)
         template = loader.get_template('zotero/inline_tags.html')
-        context = t.Context({fs: fs_val})
-        return template.render(context)
+        c = t.Context({'formset': formset, 'media': True})
+        return template.render(c)
+
+
+class RenderedMediaNode(RenderedNode):
+    def render(self, context):
+        formset = self.formset.resolve(context)
+        return formset.media.render()
+
+
+class RenderedFormsetNode(RenderedNode):
+    def render(self, context):
+        formset = self.formset.resolve(context)
+        template = loader.get_template('zotero/inline_tags.html')
+        c = t.Context({'formset': formset, 'media': False})
+        return template.render(c)

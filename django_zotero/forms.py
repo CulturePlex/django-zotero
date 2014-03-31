@@ -67,6 +67,18 @@ class TagInlineFormset(GenericTagInlineFormset):
     pass
 
 
+class TagInlineFormNoJQuery(generic.ModelForm):
+    class Media:
+        js = (
+#            'js/jquery.js',
+            'js/jquery.formset.js',
+            'js/tags.js',
+        )
+        css = {
+            'all': ('css/tags.css',)
+        }
+
+
 class TagInlineForm(generic.ModelForm):
     class Media:
         js = (
@@ -79,14 +91,18 @@ class TagInlineForm(generic.ModelForm):
         }
 
 
-def get_tag_formset(obj=None, data=None, show_labels=False, labels=None):
+def get_tag_formset(obj=None, data=None, show_labels=False, labels=None, jquery=True):
     if obj and Tag.get_tags(obj):
         extra = 0
     else:
         extra = 1
+    if jquery:
+        tagInlineForm = TagInlineForm
+    else:
+        tagInlineForm = TagInlineFormNoJQuery
     Formset = generic.generic_inlineformset_factory(
         Tag,
-        form=TagInlineForm,
+        form=tagInlineForm,
         formset=TagInlineFormset,
         extra=extra,
     )
@@ -96,7 +112,7 @@ def get_tag_formset(obj=None, data=None, show_labels=False, labels=None):
     formset.field_label = 'Field'
     formset.value_label = 'Value'
     if labels:
-        formset.item_type_label = labels.get('item_type', 'Item_type')
+        formset.item_type_label = labels.get('item_type', 'Item type')
         formset.field_label = labels.get('field', 'Field')
         formset.value_label = labels.get('value', 'Value')
         for label in labels:

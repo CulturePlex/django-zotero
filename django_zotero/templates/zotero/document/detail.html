@@ -2,13 +2,14 @@
 {% load zotero_inline_extras %}
 <html>
 <head>
+        {% zotero_inline_tags formset media %}
 </head>
 <body>
 <form id="myForm" action="" method="post">
     {% csrf_token %}
     {{ form2 }}
     <div style="margin-left:200px; width:500px">
-        {% zotero_inline_tags formset %}
+        {% zotero_inline_tags formset formset %}
     </div>
     <input type="submit" value="Save">
 </form>
