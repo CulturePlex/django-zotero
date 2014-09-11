@@ -21,9 +21,10 @@ def valid_zotero_itemtypes_fields(request):
             itemtype = line.split(':')[0]
             fields = line.split(':')[1]
             fields = fields.split(',')
-            itemtypes_fields[itemtype] = fields
+            itemtype_id = ItemType.objects.get(type_name=itemtype).id
+            field_ids = [Field.objects.get(field_name=field).id for field in fields]
+            itemtypes_fields[itemtype_id] = field_ids
     json_itemtypes_fields = json.dumps(itemtypes_fields)
-    print itemtypes_fields
     return HttpResponse(json_itemtypes_fields, content_type='text/javascript')
 
 

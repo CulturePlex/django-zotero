@@ -7,6 +7,7 @@
         var item_type_label = $("#zotero-item_type-label").val();
         var field_label = $("#zotero-field-label").val();
         var value_label = $("#zotero-value-label").val();
+        var valid_itemtype_fields_url = $("#zotero-valid-itemtypes-fields-url").val();
         
         
         // Selectors
@@ -22,29 +23,56 @@
         var valueAll = container + " td.field-value input";
         var idAll = container + " td.field-id";
         
-        // Choose applicable fields
-        var changeFields = function() {
-            var itemTypeValueFirst = $(itemTypeFirst).val();
-            if(itemTypeValueFirst == "" || itemTypeValueFirst == undefined)
-                itemTypeValueFirst = "1";
-            $.getJSON(fields_url, {'itemtype': itemTypeValueFirst}, function(data) {
-                // Show all fields
-                var fields = fieldAll + " option";
-                $(fields).show();
-                
-                // Get data
-                var applicableFields = data;
-                
-                // Hide non applicable fields
-                var numFields = $(fieldLast + " option").size() - 1
-                for(var i = 1; i <= numFields; i++)
+        var hideNonValidItemtypes = function () {
+            $.getJSON(valid_itemtype_fields_url, function(data2) {
+                var itemtypes = itemTypeAll + " option";
+                var numTypes = $(itemTypeFirst + " option").size() - 1
+                var validTypes = Object.keys(data2);
+                for(var i = 1; i <= numTypes; i++)
                 {
-                    if(applicableFields.indexOf(i) == -1)
+                    i = i.toString();
+                    if(validTypes.indexOf(i) == -1)
                     {
-                        var nonApplicableOptions = fields + "[value='" + i + "']";
+                        var nonApplicableOptions = itemtypes + "[value='" + i + "']";
                         $(nonApplicableOptions).hide();
                     }
+                    else {
+                        var applicableOptions = itemtypes + "[value='" + i + "']";
+                        $(applicableOptions).show();
+                    }
                 }
+            })
+        }
+        
+        // Choose applicable fields
+        var changeFields = function() {
+            $.getJSON(valid_itemtype_fields_url, function(data2) {
+                var itemTypeValueFirst = $(itemTypeFirst).val();
+                if(itemTypeValueFirst == "" || itemTypeValueFirst == undefined)
+                    itemTypeValueFirst = "1";
+                $.getJSON(fields_url, {'itemtype': itemTypeValueFirst}, function(data) {
+                    // Show all fields
+                    var fields = fieldAll + " option";
+                    $(fields).show();
+
+                    // Get data
+                    var applicableFields = data;
+                    
+                    // Hide non applicable fields
+                    var numFields = $(fieldLast + " option").size() - 1
+                    for(var i = 1; i <= numFields; i++)
+                    {
+                        if(applicableFields.indexOf(i) == -1 || data2[itemTypeValueFirst].indexOf(i) == -1)
+                        {
+                            var nonApplicableOptions = fields + "[value='" + i + "']";
+                            $(nonApplicableOptions).hide();
+                        }
+                        else {
+                            var applicableOptions = fields + "[value='" + i + "']";
+                            $(applicableOptions).show();
+                        }
+                    }
+                })
             })
         }
         
@@ -150,6 +178,7 @@
         // All actions
         var performActions = function() {
             hideItemTypeAndId();
+            hideNonValidItemtypes();
             setItemTypesValues();
             changeFields();
             showLabelsPlaceholders();
