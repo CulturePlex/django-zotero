@@ -1,0 +1,36 @@
+#note:(no fields)
+book:title,author,publisher,accessDate,language,ISBN,rights,extra
+bookSection:title,author,bookAuthor,bookTitle,publisher,accessDate,language,ISBN,rights,extra
+journalArticle:title,author,accessDate,language,DOI,ISSN,rights,extra
+magazineArticle:title,author,accessDate,language,ISSN,rights,extra
+newspaperArticle:title,author,accessDate,language,ISSN,rights,extra
+thesis:title,author,accessDate,language,rights,extra
+letter:title,author,accessDate,language,rights,extra
+manuscript:title,author,accessDate,language,rights,extra
+interview:title,accessDate,language,rights,extra
+film:title,accessDate,language,rights,extra
+artwork:title,accessDate,language,rights,extra
+webpage:title,author,accessDate,language,rights,extra
+#attachment(does not works)
+report:title,author,accessDate,language,rights,extra
+bill:title,accessDate,language,rights,extra
+case:caseName,author,accessDate,language,rights,extra
+hearing:title,publisher,accessDate,language,rights,extra
+patent:title,accessDate,language,rights,extra
+statute:nameOfAct,author,accessDate,language,rights,extra
+email:author,accessDate,language,rights,extra
+map:title,publisher,accessDate,language,ISBN,rights,extra
+blogPost:title,author,accessDate,language,rights,extra
+instantMessage:title,author,accessDate,language,rights,extra
+forumPost:title,author,accessDate,language,rights,extra
+audioRecording:title,accessDate,language,ISBN,rights,extra
+presentation:title,accessDate,language,rights,extra
+videoRecording:title,accessDate,language,ISBN,rights,extra
+tvBroadcast:title,accessDate,language,rights,extra
+radioBroadcast:title,accessDate,language,rights,extra
+podcast:title,accessDate,language,rights,extra
+computerProgram:title,accessDate,ISBN,rights,extra
+conferencePaper:title,author,accessDate,publisher,language,DOI,ISBN,rights,extra
+document:title,author,publisher,accessDate,language,rights,extra
+encyclopediaArticle:title,author,publisher,accessDate,ISBN,language,rights,extra
+dictionaryEntry:title,publisher,accessDate,language,ISBN,rights,extra
