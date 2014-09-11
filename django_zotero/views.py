@@ -13,6 +13,20 @@ def itemtype_fields_view(request):
     return HttpResponse(json_fields, content_type='text/javascript')
 
 
+def valid_zotero_itemtypes_fields(request):
+    itemtypes_fields = {}
+    for line in open('valid_zotero_itemtypes_and_fields.txt'):
+        if line and not line.startswith('#'):
+            line = line.strip()
+            itemtype = line.split(':')[0]
+            fields = line.split(':')[1]
+            fields = fields.split(',')
+            itemtypes_fields[itemtype] = fields
+    json_itemtypes_fields = json.dumps(itemtypes_fields)
+    print itemtypes_fields
+    return HttpResponse(json_itemtypes_fields, content_type='text/javascript')
+
+
 #test
 from django.shortcuts import render
 from django_zotero.forms import DocumentForm, get_tag_formset

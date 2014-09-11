@@ -1,2222 +1,2250 @@
 [
-  {
-    "fields": {
-      "field_name": "url", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"source\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 1
-  }, 
-  {
-    "fields": {
-      "field_name": "rights", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"rights\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 2
-  }, 
-  {
-    "fields": {
-      "field_name": "series", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 3
-  }, 
-  {
-    "fields": {
-      "field_name": "volume", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 4
-  }, 
-  {
-    "fields": {
-      "field_name": "issue", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 5
-  }, 
-  {
-    "fields": {
-      "field_name": "edition", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 6
-  }, 
-  {
-    "fields": {
-      "field_name": "place", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 7
-  }, 
-  {
-    "fields": {
-      "field_name": "publisher", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"publisher\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 8
-  }, 
-  {
-    "fields": {
-      "field_name": "pages", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 9
-  }, 
-  {
-    "fields": {
-      "field_name": "ISBN", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 10
-  }, 
-  {
-    "fields": {
-      "field_name": "publicationTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 11
-  }, 
-  {
-    "fields": {
-      "field_name": "ISSN", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 12
-  }, 
-  {
-    "fields": {
-      "field_name": "date", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 13
-  }, 
-  {
-    "fields": {
-      "field_name": "section", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 14
-  }, 
-  {
-    "fields": {
-      "field_name": "callNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 15
-  }, 
-  {
-    "fields": {
-      "field_name": "archiveLocation", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 16
-  }, 
-  {
-    "fields": {
-      "field_name": "distributor", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 17
-  }, 
-  {
-    "fields": {
-      "field_name": "extra", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"descripcion\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 18
-  }, 
-  {
-    "fields": {
-      "field_name": "journalAbbreviation", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 19
-  }, 
-  {
-    "fields": {
-      "field_name": "DOI", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 20
-  }, 
-  {
-    "fields": {
-      "field_name": "accessDate", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 21
-  }, 
-  {
-    "fields": {
-      "field_name": "seriesTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 22
-  }, 
-  {
-    "fields": {
-      "field_name": "seriesText", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 23
-  }, 
-  {
-    "fields": {
-      "field_name": "seriesNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 24
-  }, 
-  {
-    "fields": {
-      "field_name": "institution", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 25
-  }, 
-  {
-    "fields": {
-      "field_name": "reportType", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 26
-  }, 
-  {
-    "fields": {
-      "field_name": "code", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 27
-  }, 
-  {
-    "fields": {
-      "field_name": "session", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 28
-  }, 
-  {
-    "fields": {
-      "field_name": "legislativeBody", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 29
-  }, 
-  {
-    "fields": {
-      "field_name": "history", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 30
-  }, 
-  {
-    "fields": {
-      "field_name": "reporter", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 31
-  }, 
-  {
-    "fields": {
-      "field_name": "court", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 32
-  }, 
-  {
-    "fields": {
-      "field_name": "numberOfVolumes", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 33
-  }, 
-  {
-    "fields": {
-      "field_name": "committee", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 34
-  }, 
-  {
-    "fields": {
-      "field_name": "assignee", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 35
-  }, 
-  {
-    "fields": {
-      "field_name": "patentNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 36
-  }, 
-  {
-    "fields": {
-      "field_name": "priorityNumbers", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 37
-  }, 
-  {
-    "fields": {
-      "field_name": "issueDate", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 38
-  }, 
-  {
-    "fields": {
-      "field_name": "references", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 39
-  }, 
-  {
-    "fields": {
-      "field_name": "legalStatus", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 40
-  }, 
-  {
-    "fields": {
-      "field_name": "codeNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 41
-  }, 
-  {
-    "fields": {
-      "field_name": "artworkMedium", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 42
-  }, 
-  {
-    "fields": {
-      "field_name": "number", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 43
-  }, 
-  {
-    "fields": {
-      "field_name": "artworkSize", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 44
-  }, 
-  {
-    "fields": {
-      "field_name": "libraryCatalog", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 45
-  }, 
-  {
-    "fields": {
-      "field_name": "videoRecordingFormat", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"format\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 46
-  }, 
-  {
-    "fields": {
-      "field_name": "interviewMedium", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 47
-  }, 
-  {
-    "fields": {
-      "field_name": "letterType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 48
-  }, 
-  {
-    "fields": {
-      "field_name": "manuscriptType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 49
-  }, 
-  {
-    "fields": {
-      "field_name": "mapType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 50
-  }, 
-  {
-    "fields": {
-      "field_name": "scale", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 51
-  }, 
-  {
-    "fields": {
-      "field_name": "thesisType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 52
-  }, 
-  {
-    "fields": {
-      "field_name": "websiteType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 53
-  }, 
-  {
-    "fields": {
-      "field_name": "audioRecordingFormat", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"format\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 54
-  }, 
-  {
-    "fields": {
-      "field_name": "label", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 55
-  }, 
-  {
-    "fields": {
-      "field_name": "presentationType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 56
-  }, 
-  {
-    "fields": {
-      "field_name": "meetingName", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 57
-  }, 
-  {
-    "fields": {
-      "field_name": "studio", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 58
-  }, 
-  {
-    "fields": {
-      "field_name": "runningTime", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 59
-  }, 
-  {
-    "fields": {
-      "field_name": "network", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 60
-  }, 
-  {
-    "fields": {
-      "field_name": "postType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 61
-  }, 
-  {
-    "fields": {
-      "field_name": "audioFileType", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 62
-  }, 
-  {
-    "fields": {
-      "field_name": "version", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 63
-  }, 
-  {
-    "fields": {
-      "field_name": "system", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 64
-  }, 
-  {
-    "fields": {
-      "field_name": "company", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 65
-  }, 
-  {
-    "fields": {
-      "field_name": "conferenceName", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 66
-  }, 
-  {
-    "fields": {
-      "field_name": "encyclopediaTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 67
-  }, 
-  {
-    "fields": {
-      "field_name": "dictionaryTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 68
-  }, 
-  {
-    "fields": {
-      "field_name": "language", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"language\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 69
-  }, 
-  {
-    "fields": {
-      "field_name": "programmingLanguage", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 70
-  }, 
-  {
-    "fields": {
-      "field_name": "university", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 71
-  }, 
-  {
-    "fields": {
-      "field_name": "abstractNote", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"description\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 72
-  }, 
-  {
-    "fields": {
-      "field_name": "websiteTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 73
-  }, 
-  {
-    "fields": {
-      "field_name": "reportNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 74
-  }, 
-  {
-    "fields": {
-      "field_name": "billNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 75
-  }, 
-  {
-    "fields": {
-      "field_name": "codeVolume", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 76
-  }, 
-  {
-    "fields": {
-      "field_name": "codePages", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 77
-  }, 
-  {
-    "fields": {
-      "field_name": "dateDecided", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 78
-  }, 
-  {
-    "fields": {
-      "field_name": "reporterVolume", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 79
-  }, 
-  {
-    "fields": {
-      "field_name": "firstPage", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 80
-  }, 
-  {
-    "fields": {
-      "field_name": "documentNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 81
-  }, 
-  {
-    "fields": {
-      "field_name": "dateEnacted", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 82
-  }, 
-  {
-    "fields": {
-      "field_name": "publicLawNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 83
-  }, 
-  {
-    "fields": {
-      "field_name": "country", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 84
-  }, 
-  {
-    "fields": {
-      "field_name": "applicationNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 85
-  }, 
-  {
-    "fields": {
-      "field_name": "forumTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 86
-  }, 
-  {
-    "fields": {
-      "field_name": "episodeNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 87
-  }, 
-  {
-    "fields": {
-      "field_name": "blogTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 88
-  }, 
-  {
-    "fields": {
-      "field_name": "type", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"type\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 89
-  }, 
-  {
-    "fields": {
-      "field_name": "medium", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 90
-  }, 
-  {
-    "fields": {
-      "field_name": "title", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 91
-  }, 
-  {
-    "fields": {
-      "field_name": "caseName", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 92
-  }, 
-  {
-    "fields": {
-      "field_name": "nameOfAct", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 93
-  }, 
-  {
-    "fields": {
-      "field_name": "subject", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"subject\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 94
-  }, 
-  {
-    "fields": {
-      "field_name": "proceedingsTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 95
-  }, 
-  {
-    "fields": {
-      "field_name": "bookTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 96
-  }, 
-  {
-    "fields": {
-      "field_name": "shortTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 97
-  }, 
-  {
-    "fields": {
-      "field_name": "docketNumber", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"identifier\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 98
-  }, 
-  {
-    "fields": {
-      "field_name": "numPages", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 99
-  }, 
-  {
-    "fields": {
-      "field_name": "programTitle", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"title\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 100
-  }, 
-  {
-    "fields": {
-      "field_name": "issuingAuthority", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 101
-  }, 
-  {
-    "fields": {
-      "field_name": "filingDate", 
-      "multiple": false, 
-      "namespaces": "{\"dc\":\"date\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 102
-  }, 
-  {
-    "fields": {
-      "field_name": "genre", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 103
-  }, 
-  {
-    "fields": {
-      "field_name": "archive", 
-      "multiple": false, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 104
-  }, 
-  {
-    "fields": {
-      "field_name": "author", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 105
-  }, 
-  {
-    "fields": {
-      "field_name": "contributor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 106
-  }, 
-  {
-    "fields": {
-      "field_name": "editor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 107
-  }, 
-  {
-    "fields": {
-      "field_name": "translator", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 108
-  }, 
-  {
-    "fields": {
-      "field_name": "seriesEditor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 109
-  }, 
-  {
-    "fields": {
-      "field_name": "interviewee", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 110
-  }, 
-  {
-    "fields": {
-      "field_name": "interviewer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 111
-  }, 
-  {
-    "fields": {
-      "field_name": "director", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 112
-  }, 
-  {
-    "fields": {
-      "field_name": "scriptwriter", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 113
-  }, 
-  {
-    "fields": {
-      "field_name": "producer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 114
-  }, 
-  {
-    "fields": {
-      "field_name": "castMember", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 115
-  }, 
-  {
-    "fields": {
-      "field_name": "sponsor", 
-      "multiple": true, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 116
-  }, 
-  {
-    "fields": {
-      "field_name": "counsel", 
-      "multiple": true, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 117
-  }, 
-  {
-    "fields": {
-      "field_name": "inventor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 118
-  }, 
-  {
-    "fields": {
-      "field_name": "attorneyAgent", 
-      "multiple": true, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 119
-  }, 
-  {
-    "fields": {
-      "field_name": "recipient", 
-      "multiple": true, 
-      "namespaces": "{}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 120
-  }, 
-  {
-    "fields": {
-      "field_name": "performer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 121
-  }, 
-  {
-    "fields": {
-      "field_name": "composer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 122
-  }, 
-  {
-    "fields": {
-      "field_name": "wordsBy", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 123
-  }, 
-  {
-    "fields": {
-      "field_name": "cartographer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 124
-  }, 
-  {
-    "fields": {
-      "field_name": "programmer", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 125
-  }, 
-  {
-    "fields": {
-      "field_name": "artist", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 126
-  }, 
-  {
-    "fields": {
-      "field_name": "commenter", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 127
-  }, 
-  {
-    "fields": {
-      "field_name": "presenter", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 128
-  }, 
-  {
-    "fields": {
-      "field_name": "guest", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 129
-  }, 
-  {
-    "fields": {
-      "field_name": "podcaster", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 130
-  }, 
-  {
-    "fields": {
-      "field_name": "reviewedAuthor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 131
-  }, 
-  {
-    "fields": {
-      "field_name": "cosponsor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"contributor\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 132
-  }, 
-  {
-    "fields": {
-      "field_name": "bookAuthor", 
-      "multiple": true, 
-      "namespaces": "{\"dc\":\"creator\"}"
-    }, 
-    "model": "django_zotero.field", 
-    "pk": 133
-  }, 
-  {
-    "fields": {
-      "fields": [], 
-      "type_name": "note"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 1
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        6, 
-        7, 
-        8, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        24, 
-        33, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        99, 
-        104, 
-        105, 
-        106, 
-        107, 
-        108, 
-        109
-      ], 
-      "type_name": "book"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 2
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        6, 
-        7, 
-        8, 
-        9, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        24, 
-        33, 
-        45, 
-        69, 
-        72, 
-        91, 
-        96, 
-        97, 
-        104, 
-        105, 
-        106, 
-        107, 
-        108, 
-        109, 
-        133
-      ], 
-      "type_name": "bookSection"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 3
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        5, 
-        9, 
-        11, 
-        12, 
-        13, 
-        15, 
-        16, 
-        18, 
-        19, 
-        20, 
-        21, 
-        22, 
-        23, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        107, 
-        108, 
-        131
-      ], 
-      "type_name": "journalArticle"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 4
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        4, 
-        5, 
-        9, 
-        11, 
-        12, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        108, 
-        131
-      ], 
-      "type_name": "magazineArticle"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 5
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        6, 
-        7, 
-        9, 
-        11, 
-        12, 
-        13, 
-        14, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        108, 
-        131
-      ], 
-      "type_name": "newspaperArticle"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 6
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        52, 
-        69, 
-        71, 
-        72, 
-        91, 
-        97, 
-        99, 
-        104, 
-        105, 
-        106
-      ], 
-      "type_name": "thesis"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 7
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        48, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        120
-      ], 
-      "type_name": "letter"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 8
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        49, 
-        69, 
-        72, 
-        91, 
-        97, 
-        99, 
-        104, 
-        105, 
-        106, 
-        108
-      ], 
-      "type_name": "manuscript"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 9
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        47, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        106, 
-        108, 
-        110, 
-        111
-      ], 
-      "type_name": "interview"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 10
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        15, 
-        16, 
-        17, 
-        18, 
-        21, 
-        45, 
-        46, 
-        59, 
-        69, 
-        72, 
-        91, 
-        97, 
-        103, 
-        104, 
-        106, 
-        112, 
-        113, 
-        114
-      ], 
-      "type_name": "film"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 11
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        42, 
-        44, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        126
-      ], 
-      "type_name": "artwork"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 12
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        18, 
-        21, 
-        53, 
-        69, 
-        72, 
-        73, 
-        91, 
-        97, 
-        105, 
-        106, 
-        108
-      ], 
-      "type_name": "webpage"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 13
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        21, 
-        91
-      ], 
-      "type_name": "attachment"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 14
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        9, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        22, 
-        25, 
-        26, 
-        45, 
-        69, 
-        72, 
-        74, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        108, 
-        109
-      ], 
-      "type_name": "report"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 15
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        14, 
-        18, 
-        21, 
-        27, 
-        28, 
-        29, 
-        30, 
-        69, 
-        72, 
-        75, 
-        76, 
-        77, 
-        91, 
-        97, 
-        106, 
-        132
-      ], 
-      "type_name": "bill"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 16
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        18, 
-        21, 
-        30, 
-        31, 
-        32, 
-        69, 
-        72, 
-        78, 
-        79, 
-        80, 
-        92, 
-        97, 
-        98, 
-        105, 
-        106, 
-        117
-      ], 
-      "type_name": "case"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 17
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        8, 
-        9, 
-        13, 
-        18, 
-        21, 
-        28, 
-        29, 
-        30, 
-        33, 
-        34, 
-        69, 
-        72, 
-        81, 
-        91, 
-        97, 
-        106
-      ], 
-      "type_name": "hearing"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 18
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        9, 
-        18, 
-        21, 
-        35, 
-        36, 
-        37, 
-        38, 
-        39, 
-        40, 
-        69, 
-        72, 
-        84, 
-        85, 
-        91, 
-        97, 
-        101, 
-        102, 
-        106, 
-        118, 
-        119
-      ], 
-      "type_name": "patent"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 19
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        9, 
-        14, 
-        18, 
-        21, 
-        27, 
-        28, 
-        30, 
-        41, 
-        69, 
-        72, 
-        82, 
-        83, 
-        93, 
-        97, 
-        105, 
-        106
-      ], 
-      "type_name": "statute"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 20
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        18, 
-        21, 
-        69, 
-        72, 
-        94, 
-        97, 
-        105, 
-        106, 
-        120
-      ], 
-      "type_name": "email"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 21
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        6, 
-        7, 
-        8, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        22, 
-        45, 
-        50, 
-        51, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        106, 
-        109, 
-        124
-      ], 
-      "type_name": "map"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 22
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        18, 
-        21, 
-        53, 
-        69, 
-        72, 
-        88, 
-        91, 
-        97, 
-        105, 
-        106, 
-        127
-      ], 
-      "type_name": "blogPost"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 23
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        18, 
-        21, 
-        69, 
-        72, 
-        91, 
-        97, 
-        105, 
-        106, 
-        120
-      ], 
-      "type_name": "instantMessage"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 24
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        13, 
-        18, 
-        21, 
-        61, 
-        69, 
-        72, 
-        86, 
-        91, 
-        97, 
-        105, 
-        106
-      ], 
-      "type_name": "forumPost"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 25
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        4, 
-        7, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        22, 
-        33, 
-        45, 
-        54, 
-        55, 
-        59, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        106, 
-        121, 
-        122, 
-        123
-      ], 
-      "type_name": "audioRecording"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 26
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        13, 
-        18, 
-        21, 
-        56, 
-        57, 
-        69, 
-        72, 
-        91, 
-        97, 
-        106, 
-        128
-      ], 
-      "type_name": "presentation"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 27
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        4, 
-        7, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        22, 
-        33, 
-        45, 
-        46, 
-        58, 
-        59, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        106, 
-        112, 
-        113, 
-        114, 
-        115
-      ], 
-      "type_name": "videoRecording"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 28
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        46, 
-        59, 
-        60, 
-        69, 
-        72, 
-        87, 
-        91, 
-        97, 
-        100, 
-        104, 
-        106, 
-        112, 
-        113, 
-        114, 
-        115, 
-        129
-      ], 
-      "type_name": "tvBroadcast"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 29
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        54, 
-        59, 
-        60, 
-        69, 
-        72, 
-        87, 
-        91, 
-        97, 
-        100, 
-        104, 
-        106, 
-        112, 
-        113, 
-        114, 
-        115, 
-        129
-      ], 
-      "type_name": "radioBroadcast"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 30
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        18, 
-        21, 
-        22, 
-        59, 
-        62, 
-        69, 
-        72, 
-        87, 
-        91, 
-        97, 
-        106, 
-        129, 
-        130
-      ], 
-      "type_name": "podcast"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 31
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        7, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        22, 
-        45, 
-        63, 
-        64, 
-        65, 
-        70, 
-        72, 
-        91, 
-        97, 
-        104, 
-        106, 
-        125
-      ], 
-      "type_name": "computerProgram"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 32
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        7, 
-        8, 
-        9, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        20, 
-        21, 
-        45, 
-        66, 
-        69, 
-        72, 
-        91, 
-        95, 
-        97, 
-        104, 
-        105, 
-        106, 
-        107, 
-        108, 
-        109
-      ], 
-      "type_name": "conferencePaper"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 33
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        8, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        45, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        107, 
-        109, 
-        131
-      ], 
-      "type_name": "document"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 34
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        6, 
-        7, 
-        8, 
-        9, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        24, 
-        33, 
-        45, 
-        67, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104, 
-        105, 
-        106, 
-        107, 
-        108, 
-        109
-      ], 
-      "type_name": "encyclopediaArticle"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 35
-  }, 
-  {
-    "fields": {
-      "fields": [
-        1, 
-        2, 
-        3, 
-        4, 
-        6, 
-        7, 
-        8, 
-        9, 
-        10, 
-        13, 
-        15, 
-        16, 
-        18, 
-        21, 
-        24, 
-        33, 
-        45, 
-        68, 
-        69, 
-        72, 
-        91, 
-        97, 
-        104
-      ], 
-      "type_name": "dictionaryEntry"
-    }, 
-    "model": "django_zotero.itemtype", 
-    "pk": 36
+{
+  "pk": 1, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "url", 
+    "namespaces": "{\"dc\":\"url\"}"
   }
+},
+{
+  "pk": 2, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "rights", 
+    "namespaces": "{\"dc\":\"rights\"}"
+  }
+},
+{
+  "pk": 3, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "series", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 4, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "volume", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 5, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "issue", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 6, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "edition", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 7, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "place", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 8, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "publisher", 
+    "namespaces": "{\"dc\":\"publisher\"}"
+  }
+},
+{
+  "pk": 9, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "pages", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 10, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "ISBN", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 11, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "publicationTitle", 
+    "namespaces": "{\"dc\":\"publicationTitle\"}"
+  }
+},
+{
+  "pk": 12, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "ISSN", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 13, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "date", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 14, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "section", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 15, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "callNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 16, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "archiveLocation", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 17, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "distributor", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 18, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "extra", 
+    "namespaces": "{\"dc\":\"description\"}"
+  }
+},
+{
+  "pk": 19, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "journalAbbreviation", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 20, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "DOI", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 21, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "accessDate", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 22, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "seriesTitle", 
+    "namespaces": "{\"dc\":\"seriesTitle\"}"
+  }
+},
+{
+  "pk": 23, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "seriesText", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 24, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "seriesNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 25, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "institution", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 26, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "reportType", 
+    "namespaces": "{\"dc\":\"reportType\"}"
+  }
+},
+{
+  "pk": 27, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "code", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 28, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "session", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 29, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "legislativeBody", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 30, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "history", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 31, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "reporter", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 32, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "court", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 33, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "numberOfVolumes", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 34, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "committee", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 35, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "assignee", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 36, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "patentNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 37, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "priorityNumbers", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 38, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "issueDate", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 39, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "references", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 40, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "legalStatus", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 41, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "codeNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 42, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "artworkMedium", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 43, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "number", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 44, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "artworkSize", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 45, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "libraryCatalog", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 46, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "videoRecordingFormat", 
+    "namespaces": "{\"dc\":\"format\"}"
+  }
+},
+{
+  "pk": 47, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "interviewMedium", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 48, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "letterType", 
+    "namespaces": "{\"dc\":\"letterType\"}"
+  }
+},
+{
+  "pk": 49, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "manuscriptType", 
+    "namespaces": "{\"dc\":\"manuscriptType\"}"
+  }
+},
+{
+  "pk": 50, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "mapType", 
+    "namespaces": "{\"dc\":\"mapType\"}"
+  }
+},
+{
+  "pk": 51, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "scale", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 52, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "thesisType", 
+    "namespaces": "{\"dc\":\"thesisType\"}"
+  }
+},
+{
+  "pk": 53, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "websiteType", 
+    "namespaces": "{\"dc\":\"websiteType\"}"
+  }
+},
+{
+  "pk": 54, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "audioRecordingFormat", 
+    "namespaces": "{\"dc\":\"format\"}"
+  }
+},
+{
+  "pk": 55, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "label", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 56, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "presentationType", 
+    "namespaces": "{\"dc\":\"type\"}"
+  }
+},
+{
+  "pk": 57, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "meetingName", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 58, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "studio", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 59, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "runningTime", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 60, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "network", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 61, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "postType", 
+    "namespaces": "{\"dc\":\"type\"}"
+  }
+},
+{
+  "pk": 62, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "audioFileType", 
+    "namespaces": "{\"dc\":\"type\"}"
+  }
+},
+{
+  "pk": 63, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "version", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 64, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "system", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 65, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "company", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 66, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "conferenceName", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 67, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "encyclopediaTitle", 
+    "namespaces": "{\"dc\":\"encyclopediaTitle\"}"
+  }
+},
+{
+  "pk": 68, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "dictionaryTitle", 
+    "namespaces": "{\"dc\":\"dictionaryTitle\"}"
+  }
+},
+{
+  "pk": 69, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "language", 
+    "namespaces": "{\"dc\":\"language\"}"
+  }
+},
+{
+  "pk": 70, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "programmingLanguage", 
+    "namespaces": "{\"dc\":\"language\"}"
+  }
+},
+{
+  "pk": 71, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "university", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 72, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "abstractNote", 
+    "namespaces": "{\"dc\":\"abstractNote\"}"
+  }
+},
+{
+  "pk": 73, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "websiteTitle", 
+    "namespaces": "{\"dc\":\"title\"}"
+  }
+},
+{
+  "pk": 74, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "reportNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 75, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "billNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 76, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "codeVolume", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 77, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "codePages", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 78, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "dateDecided", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 79, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "reporterVolume", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 80, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "firstPage", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 81, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "documentNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 82, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "dateEnacted", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 83, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "publicLawNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 84, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "country", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 85, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "applicationNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 86, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "forumTitle", 
+    "namespaces": "{\"dc\":\"forumTitle\"}"
+  }
+},
+{
+  "pk": 87, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "episodeNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 88, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "blogTitle", 
+    "namespaces": "{\"dc\":\"blogTitle\"}"
+  }
+},
+{
+  "pk": 89, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "type", 
+    "namespaces": "{\"dc\":\"type\"}"
+  }
+},
+{
+  "pk": 90, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "medium", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 91, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "title", 
+    "namespaces": "{\"dc\":\"title\"}"
+  }
+},
+{
+  "pk": 92, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "caseName", 
+    "namespaces": "{\"dc\":\"title\"}"
+  }
+},
+{
+  "pk": 93, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "nameOfAct", 
+    "namespaces": "{\"dc\":\"title\"}"
+  }
+},
+{
+  "pk": 94, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "subject", 
+    "namespaces": "{\"dc\":\"subject\"}"
+  }
+},
+{
+  "pk": 95, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "proceedingsTitle", 
+    "namespaces": "{\"dc\":\"proceedingsTitle\"}"
+  }
+},
+{
+  "pk": 96, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "bookTitle", 
+    "namespaces": "{\"dc\":\"source\"}"
+  }
+},
+{
+  "pk": 97, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "shortTitle", 
+    "namespaces": "{\"dc\":\"shortTitle\"}"
+  }
+},
+{
+  "pk": 98, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "docketNumber", 
+    "namespaces": "{\"dc\":\"identifier\"}"
+  }
+},
+{
+  "pk": 99, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "numPages", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 100, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "programTitle", 
+    "namespaces": "{\"dc\":\"programTitle\"}"
+  }
+},
+{
+  "pk": 101, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "issuingAuthority", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 102, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "filingDate", 
+    "namespaces": "{\"dc\":\"date\"}"
+  }
+},
+{
+  "pk": 103, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "genre", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 104, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": false, 
+    "field_name": "archive", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 105, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "author", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 106, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "contributor", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 107, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "editor", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 108, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "translator", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 109, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "seriesEditor", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 110, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "interviewee", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 111, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "interviewer", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 112, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "director", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 113, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "scriptwriter", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 114, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "producer", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 115, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "castMember", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 116, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "sponsor", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 117, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "counsel", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 118, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "inventor", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 119, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "attorneyAgent", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 120, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "recipient", 
+    "namespaces": "{}"
+  }
+},
+{
+  "pk": 121, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "performer", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 122, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "composer", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 123, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "wordsBy", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 124, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "cartographer", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 125, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "programmer", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 126, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "artist", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 127, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "commenter", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 128, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "presenter", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 129, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "guest", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 130, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "podcaster", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 131, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "reviewedAuthor", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 132, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "cosponsor", 
+    "namespaces": "{\"dc\":\"contributor\"}"
+  }
+},
+{
+  "pk": 133, 
+  "model": "django_zotero.field", 
+  "fields": {
+    "multiple": true, 
+    "field_name": "bookAuthor", 
+    "namespaces": "{\"dc\":\"creator\"}"
+  }
+},
+{
+  "pk": 1, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [], 
+    "type_name": "note"
+  }
+},
+{
+  "pk": 2, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      6, 
+      107, 
+      18, 
+      69, 
+      45, 
+      99, 
+      33, 
+      7, 
+      8, 
+      2, 
+      3, 
+      109, 
+      24, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "book"
+  }
+},
+{
+  "pk": 3, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      133, 
+      96, 
+      15, 
+      106, 
+      13, 
+      6, 
+      107, 
+      18, 
+      69, 
+      45, 
+      33, 
+      9, 
+      7, 
+      8, 
+      2, 
+      3, 
+      109, 
+      24, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "bookSection"
+  }
+},
+{
+  "pk": 4, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      20, 
+      12, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      107, 
+      18, 
+      5, 
+      19, 
+      69, 
+      45, 
+      9, 
+      11, 
+      131, 
+      2, 
+      3, 
+      23, 
+      22, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "journalArticle"
+  }
+},
+{
+  "pk": 5, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      12, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      18, 
+      5, 
+      69, 
+      45, 
+      9, 
+      11, 
+      131, 
+      2, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "magazineArticle"
+  }
+},
+{
+  "pk": 6, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      12, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      6, 
+      18, 
+      69, 
+      45, 
+      9, 
+      7, 
+      11, 
+      131, 
+      2, 
+      14, 
+      97, 
+      91, 
+      108, 
+      1
+    ], 
+    "type_name": "newspaperArticle"
+  }
+},
+{
+  "pk": 7, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      18, 
+      69, 
+      45, 
+      99, 
+      7, 
+      2, 
+      97, 
+      52, 
+      91, 
+      71, 
+      1
+    ], 
+    "type_name": "thesis"
+  }
+},
+{
+  "pk": 8, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      18, 
+      69, 
+      48, 
+      45, 
+      120, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "letter"
+  }
+},
+{
+  "pk": 9, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      18, 
+      69, 
+      45, 
+      49, 
+      99, 
+      7, 
+      2, 
+      97, 
+      91, 
+      108, 
+      1
+    ], 
+    "type_name": "manuscript"
+  }
+},
+{
+  "pk": 10, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      106, 
+      13, 
+      18, 
+      47, 
+      110, 
+      111, 
+      69, 
+      45, 
+      2, 
+      97, 
+      91, 
+      108, 
+      1
+    ], 
+    "type_name": "interview"
+  }
+},
+{
+  "pk": 11, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      106, 
+      13, 
+      112, 
+      17, 
+      18, 
+      103, 
+      69, 
+      45, 
+      114, 
+      2, 
+      59, 
+      113, 
+      97, 
+      91, 
+      1, 
+      46
+    ], 
+    "type_name": "film"
+  }
+},
+{
+  "pk": 12, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      126, 
+      42, 
+      44, 
+      105, 
+      15, 
+      13, 
+      18, 
+      69, 
+      45, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "artwork"
+  }
+},
+{
+  "pk": 13, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      106, 
+      13, 
+      18, 
+      69, 
+      2, 
+      97, 
+      91, 
+      108, 
+      1, 
+      73, 
+      53
+    ], 
+    "type_name": "webpage"
+  }
+},
+{
+  "pk": 14, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      21, 
+      91, 
+      1
+    ], 
+    "type_name": "attachment"
+  }
+},
+{
+  "pk": 15, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      18, 
+      25, 
+      69, 
+      45, 
+      9, 
+      7, 
+      74, 
+      26, 
+      2, 
+      109, 
+      22, 
+      97, 
+      91, 
+      108, 
+      1
+    ], 
+    "type_name": "report"
+  }
+},
+{
+  "pk": 16, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      75, 
+      27, 
+      77, 
+      76, 
+      106, 
+      132, 
+      13, 
+      18, 
+      30, 
+      69, 
+      29, 
+      2, 
+      14, 
+      28, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "bill"
+  }
+},
+{
+  "pk": 17, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      92, 
+      106, 
+      117, 
+      32, 
+      78, 
+      98, 
+      18, 
+      80, 
+      30, 
+      69, 
+      31, 
+      79, 
+      2, 
+      97, 
+      1
+    ], 
+    "type_name": "case"
+  }
+},
+{
+  "pk": 18, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      34, 
+      106, 
+      13, 
+      81, 
+      18, 
+      30, 
+      69, 
+      29, 
+      33, 
+      9, 
+      7, 
+      8, 
+      2, 
+      28, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "hearing"
+  }
+},
+{
+  "pk": 19, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      85, 
+      35, 
+      119, 
+      106, 
+      84, 
+      18, 
+      102, 
+      118, 
+      38, 
+      101, 
+      69, 
+      40, 
+      9, 
+      36, 
+      7, 
+      37, 
+      39, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "patent"
+  }
+},
+{
+  "pk": 20, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      27, 
+      41, 
+      106, 
+      82, 
+      18, 
+      30, 
+      69, 
+      93, 
+      9, 
+      83, 
+      2, 
+      14, 
+      28, 
+      97, 
+      1
+    ], 
+    "type_name": "statute"
+  }
+},
+{
+  "pk": 21, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      106, 
+      13, 
+      18, 
+      69, 
+      120, 
+      2, 
+      97, 
+      94, 
+      1
+    ], 
+    "type_name": "email"
+  }
+},
+{
+  "pk": 22, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      124, 
+      106, 
+      13, 
+      6, 
+      18, 
+      69, 
+      45, 
+      50, 
+      7, 
+      8, 
+      2, 
+      51, 
+      109, 
+      22, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "map"
+  }
+},
+{
+  "pk": 23, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      88, 
+      127, 
+      106, 
+      13, 
+      18, 
+      69, 
+      2, 
+      97, 
+      91, 
+      1, 
+      53
+    ], 
+    "type_name": "blogPost"
+  }
+},
+{
+  "pk": 24, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      106, 
+      13, 
+      18, 
+      69, 
+      120, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "instantMessage"
+  }
+},
+{
+  "pk": 25, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      105, 
+      106, 
+      13, 
+      18, 
+      86, 
+      69, 
+      61, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "forumPost"
+  }
+},
+{
+  "pk": 26, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      54, 
+      15, 
+      122, 
+      106, 
+      13, 
+      18, 
+      55, 
+      69, 
+      45, 
+      33, 
+      121, 
+      7, 
+      2, 
+      59, 
+      22, 
+      97, 
+      91, 
+      1, 
+      4, 
+      123
+    ], 
+    "type_name": "audioRecording"
+  }
+},
+{
+  "pk": 27, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      106, 
+      13, 
+      18, 
+      69, 
+      57, 
+      7, 
+      56, 
+      128, 
+      2, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "presentation"
+  }
+},
+{
+  "pk": 28, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      115, 
+      106, 
+      13, 
+      112, 
+      18, 
+      69, 
+      45, 
+      33, 
+      7, 
+      114, 
+      2, 
+      59, 
+      113, 
+      22, 
+      97, 
+      58, 
+      91, 
+      1, 
+      46, 
+      4
+    ], 
+    "type_name": "videoRecording"
+  }
+},
+{
+  "pk": 29, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      115, 
+      106, 
+      13, 
+      112, 
+      87, 
+      18, 
+      129, 
+      69, 
+      45, 
+      60, 
+      7, 
+      114, 
+      100, 
+      2, 
+      59, 
+      113, 
+      97, 
+      91, 
+      1, 
+      46
+    ], 
+    "type_name": "tvBroadcast"
+  }
+},
+{
+  "pk": 30, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      54, 
+      15, 
+      115, 
+      106, 
+      13, 
+      112, 
+      87, 
+      18, 
+      129, 
+      69, 
+      45, 
+      60, 
+      7, 
+      114, 
+      100, 
+      2, 
+      59, 
+      113, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "radioBroadcast"
+  }
+},
+{
+  "pk": 31, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      62, 
+      106, 
+      87, 
+      18, 
+      129, 
+      69, 
+      130, 
+      2, 
+      59, 
+      22, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "podcast"
+  }
+},
+{
+  "pk": 32, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      65, 
+      106, 
+      13, 
+      18, 
+      45, 
+      7, 
+      125, 
+      70, 
+      2, 
+      22, 
+      97, 
+      64, 
+      91, 
+      1, 
+      63
+    ], 
+    "type_name": "computerProgram"
+  }
+},
+{
+  "pk": 33, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      20, 
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      66, 
+      106, 
+      13, 
+      107, 
+      18, 
+      69, 
+      45, 
+      9, 
+      7, 
+      95, 
+      8, 
+      2, 
+      3, 
+      109, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "conferencePaper"
+  }
+},
+{
+  "pk": 34, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      107, 
+      18, 
+      69, 
+      45, 
+      8, 
+      131, 
+      2, 
+      109, 
+      97, 
+      91, 
+      1
+    ], 
+    "type_name": "document"
+  }
+},
+{
+  "pk": 35, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      105, 
+      15, 
+      106, 
+      13, 
+      6, 
+      107, 
+      67, 
+      18, 
+      69, 
+      45, 
+      33, 
+      9, 
+      7, 
+      8, 
+      2, 
+      3, 
+      109, 
+      24, 
+      97, 
+      91, 
+      108, 
+      1, 
+      4
+    ], 
+    "type_name": "encyclopediaArticle"
+  }
+},
+{
+  "pk": 36, 
+  "model": "django_zotero.itemtype", 
+  "fields": {
+    "fields": [
+      10, 
+      72, 
+      21, 
+      104, 
+      16, 
+      15, 
+      13, 
+      68, 
+      6, 
+      18, 
+      69, 
+      45, 
+      33, 
+      9, 
+      7, 
+      8, 
+      2, 
+      3, 
+      24, 
+      97, 
+      91, 
+      1, 
+      4
+    ], 
+    "type_name": "dictionaryEntry"
+  }
+},
+{
+  "pk": 1, 
+  "model": "django_zotero.tag", 
+  "fields": {
+    "item_type": 2, 
+    "value": "123", 
+    "object_id": 1, 
+    "content_type": 11, 
+    "field": 10
+  }
+},
+{
+  "pk": 2, 
+  "model": "django_zotero.tag", 
+  "fields": {
+    "item_type": 2, 
+    "value": "asdadasd", 
+    "object_id": 1, 
+    "content_type": 11, 
+    "field": 105
+  }
+},
+{
+  "pk": 1, 
+  "model": "django_zotero.document", 
+  "fields": {
+    "name": "doc1"
+  }
+}
 ]
-
