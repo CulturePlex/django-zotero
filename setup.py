@@ -10,7 +10,7 @@ def read(*parts):
 
 
 def find_version(*parts):
-    default = '0.2'
+    default = '0.3'
     try:
         version_file = read(*parts)
         version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
