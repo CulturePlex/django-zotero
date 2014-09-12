@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import json
+from django.conf import settings
 from django.http import HttpResponse
 from django_zotero.models import ItemType, Field
+from os.path import abspath, dirname, join, pardir
 
 
 def itemtype_fields_view(request):
@@ -14,8 +16,10 @@ def itemtype_fields_view(request):
 
 
 def valid_zotero_itemtypes_fields(request):
+    path = abspath(join(dirname(__file__), 'media/valid_zotero_itemtypes_and_fields.txt'))
+    print path
     itemtypes_fields = {}
-    for line in open('valid_zotero_itemtypes_and_fields.txt'):
+    for line in open(path):
         if line and not line.startswith('#'):
             line = line.strip()
             itemtype = line.split(':')[0]
