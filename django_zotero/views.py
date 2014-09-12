@@ -16,8 +16,9 @@ def itemtype_fields_view(request):
 
 
 def valid_zotero_itemtypes_fields(request):
-    path = abspath(join(dirname(__file__), 'media/valid_zotero_itemtypes_and_fields.txt'))
-    print path
+    path = abspath(
+        join(dirname(__file__),
+        'media/valid_zotero_itemtypes_and_fields.txt'))
     itemtypes_fields = {}
     for line in open(path):
         if line and not line.startswith('#'):
