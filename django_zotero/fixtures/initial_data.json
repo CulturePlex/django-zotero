@@ -2217,34 +2217,5 @@
     ], 
     "type_name": "dictionaryEntry"
   }
-},
-{
-  "pk": 1, 
-  "model": "django_zotero.tag", 
-  "fields": {
-    "item_type": 2, 
-    "value": "123", 
-    "object_id": 1, 
-    "content_type": 11, 
-    "field": 10
-  }
-},
-{
-  "pk": 2, 
-  "model": "django_zotero.tag", 
-  "fields": {
-    "item_type": 2, 
-    "value": "asdadasd", 
-    "object_id": 1, 
-    "content_type": 11, 
-    "field": 105
-  }
-},
-{
-  "pk": 1, 
-  "model": "django_zotero.document", 
-  "fields": {
-    "name": "doc1"
-  }
 }
 ]
