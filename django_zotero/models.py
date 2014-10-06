@@ -68,9 +68,13 @@ class Tag(models.Model):
         tags = Tag.objects.filter(content_type__pk=ct.id, object_id=obj.id)
         return tags
     
-    @staticmethod
-    def get_object(tag):
-        return tag.content_object
+    def get_object(self):
+        return self.content_object
+    
+    def set_object(self, obj):
+        self.object_id = obj.id
+        self.content_object = obj
+        self.save()
 
 
 #test
