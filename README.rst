@@ -15,7 +15,7 @@ To install virtualenvwrapper_, go to http://virtualenvwrapper.readthedocs.org/en
 
 Now install django-zotero_::
 
-    $ pip install diango-zotero
+    $ pip install django-zotero
 
 
 Usage
