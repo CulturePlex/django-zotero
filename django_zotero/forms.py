@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
-from django.contrib.contenttypes import generic
+from django.contrib.contenttypes import generic, forms
 from django.db import transaction
 from models import Tag
 
@@ -38,7 +38,7 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                         else:
                             single_fields.append(field)
     
-    @transaction.autocommit
+    @transaction.set_autocommit
     def save(self):
         try:
             super(GenericTagInlineFormset, self).save()
@@ -56,7 +56,7 @@ class TagInlineFormsetAdmin(GenericTagInlineFormset):
     pass
 
 
-class TagInlineFormAdmin(generic.ModelForm):
+class TagInlineFormAdmin(forms.ModelForm):
     class Media:
         js = (
             'js/tags_admin.js',
@@ -67,7 +67,7 @@ class TagInlineFormset(GenericTagInlineFormset):
     pass
 
 
-class TagInlineFormNoJQuery(generic.ModelForm):
+class TagInlineFormNoJQuery(forms.ModelForm):
     class Media:
         js = (
 #            'js/jquery.js',
@@ -79,7 +79,7 @@ class TagInlineFormNoJQuery(generic.ModelForm):
         }
 
 
-class TagInlineForm(generic.ModelForm):
+class TagInlineForm(forms.ModelForm):
     class Media:
         js = (
             'js/jquery.js',
