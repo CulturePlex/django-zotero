@@ -38,7 +38,7 @@ class GenericTagInlineFormset(generic.BaseGenericInlineFormSet):
                         else:
                             single_fields.append(field)
     
-    @transaction.set_autocommit
+#    @transaction.set_autocommit
     def save(self):
         try:
             super(GenericTagInlineFormset, self).save()
