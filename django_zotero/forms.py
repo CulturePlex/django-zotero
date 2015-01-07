@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django import forms
-from django.contrib.contenttypes import generic, forms
+from django.contrib.contenttypes import generic
 from django.db import transaction
 from models import Tag
 
@@ -56,7 +56,7 @@ class TagInlineFormsetAdmin(GenericTagInlineFormset):
     pass
 
 
-class TagInlineFormAdmin(forms.ModelForm):
+class TagInlineFormAdmin(generic.ModelForm):
     class Media:
         js = (
             'js/tags_admin.js',
@@ -67,7 +67,7 @@ class TagInlineFormset(GenericTagInlineFormset):
     pass
 
 
-class TagInlineFormNoJQuery(forms.ModelForm):
+class TagInlineFormNoJQuery(generic.ModelForm):
     class Media:
         js = (
 #            'js/jquery.js',
@@ -79,7 +79,7 @@ class TagInlineFormNoJQuery(forms.ModelForm):
         }
 
 
-class TagInlineForm(forms.ModelForm):
+class TagInlineForm(generic.ModelForm):
     class Media:
         js = (
             'js/jquery.js',
